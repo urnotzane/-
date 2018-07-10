@@ -1,0 +1,5 @@
+
+可修改
+<rate bind:goodTap="goodTap" id="rate" starNum='5' goodNum='0' readOnly="false"></rate>
+只读
+<rate bind:goodTap="goodTap" id="rate" starNum='5' goodNum='3' readOnly="true"></rate>

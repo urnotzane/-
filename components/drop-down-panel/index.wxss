@@ -1,0 +1,6 @@
+/* AUTHOR @ ZANE */
+
+.drop-down-panel{
+  font-size: 14px;
+  background-color: #fff;
+}

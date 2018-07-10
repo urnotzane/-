@@ -1,0 +1,10 @@
+<!-- AUTHOR @ ZANE -->
+
+<view class="select-list icon-correct">
+  <view bindtap='_bindSelect' data-index="{{index}}" data-title="{{item.title}}" class="select-list-cell {{item.selected ? 'selected-style' : ''}}" wx:for="{{list}}" wx:key="{{index}}" style="color:{{item.selected ? selectedColor : ''}}">
+    {{item.title}}
+    <slot></slot>
+    <!-- <icon class='icon-right' hidden='{{!item.selected}}'>选中</icon> -->
+    <text class="iconfont icon-right" hidden='{{!item.selected}}'></text>
+  </view>
+</view>

@@ -1,0 +1,5 @@
+<select-list id="select-list" list="{{list}}" selectedColor="" bind:bindSelect="bindSelect">
+</select-list>
+自定义选中颜色
+<select-list id="select-list" list="{{list2}}" selectedColor="{{selectedColor}}" bind:bindSelect="bindSelect">
+</select-list>

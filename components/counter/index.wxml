@@ -1,0 +1,6 @@
+<!-- AUTHOR @ ZANE -->
+<view class="counter">
+  <view style="color:{{counterNum<=minNum?'#ccc':''}}" class='counter-sub' data-type="sub" bindtap='_countControl'>-</view>
+  <view class='counter-num'>{{counterNum||0}}</view>
+  <view style="color:{{counterNum>=maxNum?'#ccc':''}}" class='counter-add' data-type="add" bindtap='_countControl'>+</view>
+</view>

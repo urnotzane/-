@@ -1,0 +1,2 @@
+<!--pages/example/steps.wxml-->
+<steps id="steps" stepsData="{{stepsData}}" isDone="{{isDone}}"></steps>

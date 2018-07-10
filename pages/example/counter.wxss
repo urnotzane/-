@@ -1,0 +1,4 @@
+/* pages/example/counter.wxss */
+#counter{
+  /* margin: 0 auto; */
+}

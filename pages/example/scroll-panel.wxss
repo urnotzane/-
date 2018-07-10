@@ -1,0 +1,8 @@
+
+page{
+  font-size: 14px;
+}
+
+text{
+  padding-left: 20px;
+}

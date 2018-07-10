@@ -1,0 +1,7 @@
+<!-- 组件模板 -->
+<view class="pop-layer" catchtap="hide">
+  <view class='container' id="container" hidden="{{!show}}" style="left: {{left}}px; top: {{top}}px; {{estyle}}">
+    <slot name="title"></slot>
+  </view>  
+  <slot name="target"></slot>
+</view>

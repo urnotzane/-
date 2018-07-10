@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "select选择",
+  "usingComponents": {
+    "select-list": "../../components/select-list/index"
+  }
+}

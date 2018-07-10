@@ -1,0 +1,78 @@
+/* AUTHOR @ ZANE */
+@import '../../app.wxss';
+
+.scroll-panel {
+  /* position: fixed;
+  top: 0px; */
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #fff;
+  background-color: #ff9300;
+  margin: 10px 0;
+  padding: 8px 20px;
+  width: 100%;
+}
+
+.scroll-font {
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.font-area {
+  position: relative;
+   animation: var(--direction--) var(--marqueeSpeed--) infinite; 
+  animation-timing-function: linear; /*匀速*/
+  display: inline-block;
+  font-size: 12px;
+}
+
+/* 向上 */
+
+@keyframes upMove {
+  from {
+    top: 25px;
+  }
+
+  to {
+    top: var(--marqueeHeight--);
+  }
+}
+
+/* 向下 */
+
+@keyframes downMove {
+  from {
+    top: var(--marqueeHeight--);
+  }
+
+  to {
+    top: 25px;
+  }
+}
+
+/* 向左 */
+
+@keyframes leftMove {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: var(--marqueeWidth--);
+  }
+}
+
+/* 向右 */
+
+@keyframes rightMove {
+  from {
+    margin-left: var(--marqueeWidth--);
+  }
+
+  to {
+    margin-left: 100%;
+  }
+}

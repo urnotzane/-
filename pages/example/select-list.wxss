@@ -1,0 +1,9 @@
+page{
+  display: block;
+  font-size: 14px;
+}
+
+
+#select-list {
+  width: 100%;
+}

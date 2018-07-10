@@ -1,0 +1,15 @@
+<!-- AUTHOR @ ZANE -->
+<view class="count-down">
+  <text>{{days}}</text> 天
+  <text>{{hours}}</text> 时
+  <text>{{minutes}}</text> 分
+  <text>{{seconds}}</text> 秒
+  <view class="control-btn">
+    <button class="weui-btn mini-btn" size="mini" type="primary" data-type="{{counting?'pause':'start'}}" bindtap='_conterControl'>
+      <view class="iconfont icon-{{counting?'pause':'start'}}"></view>
+    </button>
+    <button class="weui-btn mini-btn" disabled="{{!counting?'true':''}}" size="mini" type="warn" data-type="stop" bindtap='_conterControl'>
+      <view class="iconfont icon-end"></view>
+    </button>
+  </view>
+</view>

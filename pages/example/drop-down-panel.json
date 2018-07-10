@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "组件库中心",
+  "usingComponents": {
+    "drop-down-panel": "../../components/drop-down-panel/index"
+  }
+}

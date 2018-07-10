@@ -1,0 +1,24 @@
+<!-- AUTHOR @ ZANE -->
+
+<view class="popToast" hidden='{{!isShow}}'>
+  <view class='toast-mask' hidden="{{toastType=='tip'}}"></view>
+  <!-- bindcustomevent="_hideToast" -->
+  <view id="toast-area" class='toast-area' catchtap='_hideToast'>
+    <view class='toast-cell promot' hidden="{{toastType!=='promot'}}">
+      <view class='toast-content'>{{toastContent[0].value}}</view>
+      <view class='promot-btn'>
+        <view style='color:#00a0ea;' data-confirm="true" bindtap='_confirmCancel'>确认</view>
+        <view data-confirm="false" bindtap='_confirmCancel'>取消</view>
+      </view>
+    </view>
+    <view class='toast-cell' hidden="{{toastType!=='list'}}">
+      <view class='toast-content' wx:for="{{toastContent}}" wx:key="index">
+        <view hidden="{{!item.name}}" class='name'>{{item.name || ''}}</view>
+        <view class='value' data-link="{{item.link}}">{{item.value || ''}}</view>
+      </view>
+    </view>
+    <view class='toast-cell tip' wx:if="{{toastType==='tip'}}">
+      {{toastContent[0].value}}
+    </view>
+  </view>
+</view>

@@ -1,0 +1,1 @@
+<count-down id="count-down" days="3" hours="0" minutes='0' seconds="0" bind:bindCount="bindCount"></count-down>

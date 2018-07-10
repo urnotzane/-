@@ -1,0 +1,12 @@
+.kind-list {
+  display: flex;
+  flex: 1;
+}
+
+.weui-cells {
+  flex: 1;
+}
+
+
+
+

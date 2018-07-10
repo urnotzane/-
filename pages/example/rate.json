@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "rate评分",
+  "usingComponents": {
+    "rate": "../../components/rate/index"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "scroll-panel滚动提示",
+  "usingComponents": {
+    "scroll-panel": "../../components/scroll-panel/index"
+  }
+}

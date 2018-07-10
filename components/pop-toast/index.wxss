@@ -1,0 +1,88 @@
+/* AUTHOR @ ZANE */
+
+.popToast{
+  font-size: 14px;
+}
+.popToast .toast-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  font-size: 14px;
+}
+
+.toast-mask {
+  z-index: 1001;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.toast-area{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1002;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toast-cell{
+  z-index: 1003;
+  background-color: #fff;
+  padding: 10px 20px;
+  line-height: 25px;
+  border-radius: 2px;
+  max-width: 280px;
+  min-width: 100px;
+  max-height: 100%;
+}
+
+.promot{
+  padding: 20px 20px 10px 20px;
+  width: 250px;
+}
+
+.toast-cell .toast-content{
+  display: flex;
+}
+
+.toast-cell .toast-content .name{
+  margin-right: 15px;
+}
+
+.toast-cell .toast-content .value{
+  color: #999;
+}
+
+.promot .promot-btn{
+  margin-top: 10px;
+}
+
+.promot .promot-btn view{
+  width: 50px;
+  text-align: center;
+  float: right;
+}
+
+.toast-cell.tip{
+  box-sizing: border-box;
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+   align-items: center; 
+  padding: 20px;
+  overflow: hidden;
+  /* text-overflow: ellipsis;
+  white-space: nowrap;  */
+  line-height:20px;
+
+}

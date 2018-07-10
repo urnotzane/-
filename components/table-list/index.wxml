@@ -1,0 +1,14 @@
+<!-- AUTHOR @ ZANE -->
+
+<view class="table-list">
+  <view class='table-list-hd'>
+    <view class="table-list-hd-title">名称</view>
+    <view class="table-list-hd-desc">描述</view>
+  </view>
+  <view class="table-list-bd">
+    <view class="table-list-cell" wx:for="{{list}}" wx:key="{{index}}">
+      <view class="table-list-cell-title">{{item.title}}</view>
+      <view class="table-list-cell-desc">{{item.desc}}</view>
+    </view>
+  </view>
+</view>

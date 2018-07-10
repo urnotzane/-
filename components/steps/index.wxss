@@ -1,0 +1,53 @@
+/* AUTHOR @ ZANE */
+
+.steps {
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #fff;
+  color: #222;
+}
+
+.steps .steps-cell {
+  display: flex;
+}
+
+.steps .steps-cell .steps-strip {
+  width: 25px;
+  float: left;
+  overflow: hidden;
+}
+
+.isDone {
+  background-color: #1aad19 !important;
+   border-color: #1aad19 !important; 
+}
+
+.steps .steps-cell .strip-dot {
+  width: 10px;
+  height: 10px;
+  border: #ddd solid 1rpx;
+  border-radius: 50%;
+  background-color: #ddd;
+  z-index: 100;
+}
+
+.steps .steps-cell .strip-vertical {
+  border-right: #ddd solid 1px;
+  width: 10rpx;
+  height: 100%;
+  z-index: 99;
+}
+
+.steps .steps-cell .steps-content {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  flex: 1;
+}
+
+.steps .steps-cell .steps-content .steps-desc {
+  color: #999;
+  font-size: 13px;
+  margin-top: 3px;
+}

@@ -1,0 +1,14 @@
+ <text>向左</text> 
+<scroll-panel id="scroll-panel" marqueeSpeed='8' scrollWay='left' notice="{{notice}}"></scroll-panel>
+
+ 
+<text>向右</text>
+<scroll-panel id="scroll-panel2" marqueeSpeed='8' scrollWay='right' notice="{{notice}}"></scroll-panel>
+
+
+<text>向上</text>
+<scroll-panel id="scroll-panel3" marqueeSpeed='8' scrollWay='up' notice="{{notice}}"></scroll-panel>
+
+
+<text>向下</text>
+<scroll-panel id="scroll-panel4" marqueeSpeed='8' scrollWay='down' notice="{{notice}}"></scroll-panel> 

@@ -1,0 +1,13 @@
+/* AUTHOR @ ZANE */
+@import '../../app.wxss';
+
+.rate {
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.iconfont {
+  font-size: 30px;
+  margin: 4px;
+}

@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/example/pop-toast",
+    "pages/example/drop-down-panel",
+    "pages/example/select-list",
+    "pages/example/count-down",
+    "pages/example/counter",
+    "pages/example/steps",
+    "pages/example/table-list",
+    "pages/example/rate",
+    "pages/example/scroll-panel"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}
