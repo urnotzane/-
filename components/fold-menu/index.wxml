@@ -1,0 +1,18 @@
+<!-- AUTHOR @ ZANE -->
+
+<view class="fold-menu" style="height:{{height}}px">
+  <view class="menu-container">
+    <view wx:for="{{tabs}}" wx:key="{{index}}" class='menu-title iconfont icon-{{item.icon}}' data-index="{{index}}" bindtap='_bindMenu'>{{item.title}}</view>
+  </view>
+
+  <!-- 隐藏的二级菜单，最后一个二级菜单设置为right:5px -->
+  <view class="fold-container" wx:for="{{tabs}}" wx:key="{{index}}" hidden="{{item.hidden}}" style="bottom: {{height+10}}px;{{tabs.length==index+1?'right:5px':'left:'+submenuLeft+'px'}}">
+    <!-- 遮罩 -->
+     <view class='fold-mask' hidden='{{item.hidden}}' data-index="{{index}}" bindtap='_bindMenu' style="bottom: {{height}}px"></view> 
+    <!-- 子菜单 -->
+    <view class="fold-cell" bindtap="_bindTo" data-url="{{item.url}}" wx:for="{{item.submenu}}" wx:key="{{key}}">
+      <icon hidden='{{!item.icon}}' class="iconfont icon-{{item.icon}} "></icon>
+      <text class="fold-cell-title ">{{item.title}}</text>
+    </view>
+  </view>
+</view>

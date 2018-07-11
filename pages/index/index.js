@@ -13,7 +13,8 @@ Page({
       'steps',
       'table-list',
       'rate',
-      'scroll-panel'
+      'scroll-panel',
+	  'fold-menu',
     ]
   }
 });

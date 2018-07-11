@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "底部多级菜单",
+  "usingComponents": {
+    "fold-menu": "../../components/fold-menu/index"
+  }
+}

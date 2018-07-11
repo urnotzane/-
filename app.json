@@ -9,7 +9,8 @@
     "pages/example/steps",
     "pages/example/table-list",
     "pages/example/rate",
-    "pages/example/scroll-panel"
+    "pages/example/scroll-panel",
+    "pages/example/fold-menu"
   ],
   "window": {
     "backgroundTextStyle": "light",

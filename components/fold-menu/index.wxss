@@ -1,0 +1,65 @@
+/* AUTHOR @ ZANE */
+@import '../../app.wxss';
+
+.fold-mask{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 888;
+  width: 100%;
+  height: 100%;
+}
+
+.fold-menu {
+  box-sizing: border-box;
+  position: fixed;
+  bottom: 0px;
+  z-index: 1000;
+  width: 100%;
+  font-size: 14px;
+  background-color: #fff;
+  border-top: 1rpx #999 solid;
+}
+
+.iconfont{
+  font-size: 14px;
+}
+
+.fold-menu .menu-container {
+  position: relative;
+  display: flex;
+  z-index: 1000;
+}
+
+.fold-menu .menu-container .menu-title {
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+  border-right: 1rpx #999 solid;
+  margin-top: 10px;
+  line-height: 30px;
+  z-index: 1000;
+  margin-right: 1px;
+}
+
+ .fold-menu .menu-container .menu-title:last-child {
+  border-right: none;
+} 
+
+.fold-menu .fold-container {
+  position: fixed;
+  padding: 5px 15px;
+  border: 1rpx #999 solid;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #555;
+  z-index: 999;
+}
+
+.fold-menu .fold-container .fold-cell {
+  position: relative;
+  padding: 5px 0 ;
+  line-height: 23px;
+  z-index: 1001;
+}
