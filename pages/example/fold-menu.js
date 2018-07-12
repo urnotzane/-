@@ -145,6 +145,7 @@ Page({
         ]
       }
     ],
+    height: 0
   },
 
   /**
@@ -153,6 +154,16 @@ Page({
   onLoad: function(options) {
 
   },
+
+  // 组件事件触发
+  bindGetInfo: function(e) {
+    console.log(e.detail)
+    if (e.detail.height) {
+      this.setData({
+        height: e.detail.height
+      })
+    }
+  }
 
 
 })

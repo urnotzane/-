@@ -20,7 +20,7 @@ Component({
     _bindMenu: function(e) {
       const index = e.currentTarget.dataset.index
       const length = this.data.tabs.length
-      console.log(this.data.tabs[index])
+      // console.log(this.data.tabs[index])
       if (this.data.tabs[index].submenu.length > 0) {
         // 如果子菜单已显示则隐藏
         if (!this.data.tabs[index].hidden) {
@@ -42,11 +42,11 @@ Component({
         //   url: 'e.currentTarget.dataset.url',
         // })
       }
+      this.triggerEvent("bindGetInfo", this.data.tabs[index]);
     },
 
     // 子菜单跳转
     _bindTo: function(e) {
-      console.log(e.currentTarget.dataset)
       this.data.tabs.map(item => {
         item.hidden = true
       })
@@ -56,6 +56,7 @@ Component({
       // wx.redirectTo({
       //   url: 'e.currentTarget.dataset.url',
       // })
+      this.triggerEvent("bindGetInfo", e.currentTarget.dataset);
     }
 
   },
@@ -73,6 +74,10 @@ Component({
         })
       },
     })
+
+    this.triggerEvent("bindGetInfo", {
+      height: this.data.height
+    });
   }
 
 })
