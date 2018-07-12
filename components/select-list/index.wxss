@@ -6,8 +6,8 @@
   font-size: 14px;
   width: 100%;
   padding: 5px 15px;
-  border-top: 1rpx #ccc solid;
-  border-bottom: 1rpx #ccc solid;
+  /* border-top: 1rpx #ccc solid;
+  border-bottom: 1rpx #ccc solid; */
   background-color: #fff;
   color: #555;
   margin-bottom: 15px;
@@ -22,7 +22,7 @@
 /* 被选中的样式 */
 
 .selected-style {
-  color: #1aad19;
+  color: #33d1bf;
 }
 
 .iconfont{

@@ -1,5 +1,5 @@
 <!-- AUTHOR @ ZANE -->
 
 <view class="rate">
-  <icon bindtap='_goodTap' class='iconfont icon-rate' data-index="{{index}}" style="color: {{item?'#FCAC00':''}}" wx:for="{{rate}}" wx:key="{{index}}"></icon>
+  <icon bindtap='_goodTap' class='iconfont icon-rate' data-index="{{index}}" style="color: {{item?'#33d1bf':''}}" wx:for="{{rate}}" wx:key="{{index}}"></icon>
 </view>

@@ -4,7 +4,8 @@
 }
 
 .container-cell{
-  margin: 15px 15px;
+  margin: 10px 15px;
+  margin-bottom: 20px;
 }
 
 .container-cell .component-title{
@@ -25,7 +26,7 @@
 .container .container-cell .weui-btn {
   width: 100px;
   display: block;
-  background-color: #00a0ea;
+  background-color: #33d1bf;
   margin: 10px auto;
   padding: 5px 20px;
 }

@@ -20,8 +20,8 @@
 }
 
 .isDone {
-  background-color: #1aad19 !important;
-   border-color: #1aad19 !important; 
+  background-color: #33d1bf !important;
+  border-color: #33d1bf !important;
 }
 
 .steps .steps-cell .strip-dot {
