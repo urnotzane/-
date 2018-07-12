@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "底部多级菜单",
+  "navigationBarTitleText": "ZANE组件库",
   "usingComponents": {
     "fold-menu": "../../components/fold-menu/index",
     "pop-toast": "../../components/pop-toast/index",

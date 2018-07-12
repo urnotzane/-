@@ -1,1 +1,0 @@
-<counter id="counter" counterNum="" maxNum="100" minNum="0" bind:countControl="countControl"></counter>

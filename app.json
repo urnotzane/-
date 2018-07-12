@@ -1,21 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/example/pop-toast",
-    "pages/example/drop-down-panel",
-    "pages/example/select-list",
-    "pages/example/count-down",
-    "pages/example/counter",
-    "pages/example/steps",
-    "pages/example/table-list",
-    "pages/example/rate",
-    "pages/example/scroll-panel",
-    "pages/example/fold-menu"
+    "pages/home/fold-menu"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#33d1bf",
+    "navigationBarTitleText": "ZANE组件库",
+    "navigationBarTextStyle": "#fff"
   }
 }

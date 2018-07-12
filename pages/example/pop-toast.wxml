@@ -1,4 +1,0 @@
-<view class="container">
-  <button wx:for="{{list}}" wx:key="{{index}}" bindtap="bindPopWindow" class="weui-btn mini-btn" size="mini" type="primary" data-type="{{item}}">{{item}}</button>
-  <pop-toast id="popToast" bind:confirmCancel="confirmCancel"></pop-toast>
-</view>

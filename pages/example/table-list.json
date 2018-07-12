@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "table列表",
-  "usingComponents": {
-    "table-list": "../../components/table-list/index"
-  }
-}

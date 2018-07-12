@@ -1,6 +1,0 @@
-{
-  "navigationBarTitleText": "组件库中心",
-  "usingComponents": {
-    "pop-toast": "../../components/pop-toast/index"
-  }
-}

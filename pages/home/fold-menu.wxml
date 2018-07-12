@@ -3,21 +3,21 @@
 
   <count-down wx:if="{{type=='count-down'||type=='all'}}" id="count-down" days="3" hours="0" minutes='0' seconds="0" bind:bindCount="bindCount"></count-down>
 
-  <counter wx:if="{{type=='counter'||type=='all'}}"  id="counter" counterNum="" maxNum="100" minNum="0" bind:countControl="countControl"></counter>
+  <counter wx:if="{{type=='counter'||type=='all'}}" id="counter" counterNum="" maxNum="100" minNum="0" bind:countControl="countControl"></counter>
 
-  <view  wx:if="{{type=='pop-toast'||type=='all'}}" class="container-cell">
-    <button wx:for="{{list}}" wx:key="{{index}}" bindtap="bindPopWindow" class="weui-btn mini-btn" size="mini" type="primary" data-type="{{item}}">{{item}}</button>
+  <view wx:if="{{type=='pop-toast'||type=='all'}}" class="container-cell">
+    <button wx:for="{{toastList}}" wx:key="{{index}}" bindtap="bindPopWindow" class="weui-btn mini-btn" size="mini" type="primary" data-type="{{item}}">{{item}}</button>
     <pop-toast id="popToast" bind:confirmCancel="confirmCancel"></pop-toast>
   </view>
 
-  <view wx:if="{{type=='rate'||type=='all'}}"  class="container-cell">
+  <view wx:if="{{type=='rate'||type=='all'}}" class="container-cell">
     可修改
     <rate bind:goodTap="goodTap" id="rate" starNum='5' goodNum='0' readOnly="false"></rate>
     只读
     <rate bind:goodTap="goodTap" id="rate" starNum='5' goodNum='3' readOnly="true"></rate>
   </view>
 
-  <view wx:if="{{type=='scroll-panel'||type=='all'}}"  class="container-cell">
+  <view wx:if="{{type=='scroll-panel'||type=='all'}}" class="container-cell scroll-panel">
     <text>向左</text>
     <scroll-panel id="scroll-panel" marqueeSpeed='8' scrollWay='left' notice="{{notice}}"></scroll-panel>
 
@@ -31,19 +31,19 @@
     <scroll-panel id="scroll-panel4" marqueeSpeed='8' scrollWay='down' notice="{{notice}}"></scroll-panel>
   </view>
 
-  <view  wx:if="{{type=='select-list'||type=='all'}}" class="container-cell">
-    <select-list id="select-list" list="{{list}}" selectedColor="" bind:bindSelect="bindSelect">
+  <view wx:if="{{type=='select-list'||type=='all'}}" class="container-cell">
+    <select-list id="select-list" list="{{selectList}}" selectedColor="" bind:bindSelect="bindSelect">
     </select-list>
     自定义选中颜色
-    <select-list id="select-list" list="{{list2}}" selectedColor="{{selectedColor}}" bind:bindSelect="bindSelect">
+    <select-list id="select-list" list="{{selectList2}}" selectedColor="{{selectedColor}}" bind:bindSelect="bindSelect">
     </select-list>
   </view>
 
   <!--pages/example/steps.wxml-->
-  <steps wx:if="{{type=='steps'||type=='all'}}"  id="steps" stepsData="{{stepsData}}" isDone="{{isDone}}"></steps>
+  <steps wx:if="{{type=='steps'||type=='all'}}" id="steps" stepsData="{{stepsData}}" isDone="{{isDone}}"></steps>
 
   <!--pages/example/table-list.wxml-->
-  <table-list wx:if="{{type=='table-list'||type=='all'}}"  id="table-list" list="{{list}}"></table-list>
+  <table-list wx:if="{{type=='table-list'||type=='all'}}" id="table-list" list="{{tableList}}"></table-list>
 
 
 </view>

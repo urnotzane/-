@@ -1,9 +1,0 @@
-
-<view class="kind-list">
-  <view class="weui-cells weui-cells_show"> 
-    <navigator url="../example/{{item}}" class="weui-cell weui-cell_access" wx:for="{{list}}" wx:key="{{index}}">
-      <view class="weui-cell__bd">{{item}}</view>
-      <view class="weui-cell__ft weui-cell__ft_in-access"></view>
-    </navigator>
-  </view>
-</view>
