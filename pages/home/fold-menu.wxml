@@ -1,16 +1,24 @@
 <view class='container' style='padding-bottom:{{height}}px'>
   <fold-menu bind:bindGetInfo="bindGetInfo" id="fold-menu" tabs="{{tabs}}"></fold-menu>
 
-  <count-down wx:if="{{type=='count-down'||type=='all'}}" id="count-down" days="3" hours="0" minutes='0' seconds="0" bind:bindCount="bindCount"></count-down>
+  <view wx:if="{{type=='count-down'||type=='all'}}" class='container-cell'>
+    <view class="component-title">倒计时</view>
+    <count-down id="count-down" days="3" hours="0" minutes='0' seconds="0" bind:bindCount="bindCount"></count-down>
+  </view>
 
-  <counter wx:if="{{type=='counter'||type=='all'}}" id="counter" counterNum="" maxNum="100" minNum="0" bind:countControl="countControl"></counter>
+  <view wx:if="{{type=='counter'||type=='all'}}" class='container-cell'>
+    <view class="component-title">计数器</view>
+    <counter id="counter" counterNum="" maxNum="100" minNum="0" bind:countControl="countControl"></counter>
+  </view>
 
   <view wx:if="{{type=='pop-toast'||type=='all'}}" class="container-cell">
+    <view class="component-title">弹出框</view>
     <button wx:for="{{toastList}}" wx:key="{{index}}" bindtap="bindPopWindow" class="weui-btn mini-btn" size="mini" type="primary" data-type="{{item}}">{{item}}</button>
     <pop-toast id="popToast" bind:confirmCancel="confirmCancel"></pop-toast>
   </view>
 
   <view wx:if="{{type=='rate'||type=='all'}}" class="container-cell">
+    <view class="component-title">评分</view>
     可修改
     <rate bind:goodTap="goodTap" id="rate" starNum='5' goodNum='0' readOnly="false"></rate>
     只读
@@ -18,6 +26,7 @@
   </view>
 
   <view wx:if="{{type=='scroll-panel'||type=='all'}}" class="container-cell scroll-panel">
+    <view class="component-title">滚动信息</view>
     <text>向左</text>
     <scroll-panel id="scroll-panel" marqueeSpeed='8' scrollWay='left' notice="{{notice}}"></scroll-panel>
 
@@ -32,6 +41,7 @@
   </view>
 
   <view wx:if="{{type=='select-list'||type=='all'}}" class="container-cell">
+    <view class="component-title">选中列表</view>
     <select-list id="select-list" list="{{selectList}}" selectedColor="" bind:bindSelect="bindSelect">
     </select-list>
     自定义选中颜色
@@ -39,11 +49,14 @@
     </select-list>
   </view>
 
-  <!--pages/example/steps.wxml-->
-  <steps wx:if="{{type=='steps'||type=='all'}}" id="steps" stepsData="{{stepsData}}" isDone="{{isDone}}"></steps>
+  <view wx:if="{{type=='steps'||type=='all'}}" class='container-cell'>
+    <view class="component-title">步骤</view>
+    <steps id="steps" stepsData="{{stepsData}}" isDone="{{isDone}}"></steps>
+  </view>
 
-  <!--pages/example/table-list.wxml-->
-  <table-list wx:if="{{type=='table-list'||type=='all'}}" id="table-list" list="{{tableList}}"></table-list>
-
+  <view wx:if="{{type=='table-list'||type=='all'}}" class='container-cell'>
+    <view class="component-title">表格</view>
+    <table-list id="table-list" list="{{tableList}}"></table-list>
+  </view>
 
 </view>

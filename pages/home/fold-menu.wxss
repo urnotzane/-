@@ -3,6 +3,17 @@
   height: 100%;
 }
 
+.container-cell{
+  margin: 15px 15px;
+}
+
+.container-cell .component-title{
+  color: #33d1bf;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
 #count-down {
   width: 100%;
 }
@@ -11,7 +22,7 @@
   width: 100%;
 }
 
-.container .weui-btn {
+.container .container-cell .weui-btn {
   width: 100px;
   display: block;
   background-color: #00a0ea;
