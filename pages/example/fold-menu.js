@@ -5,50 +5,50 @@ Page({
    * 页面的初始数据
    */
   data: {
-    tabs: [
-      {
-        icon: '',
+    tabs: [{
+        icon: 'rate',
         title: '业务端',
         hidden: true,
+        url: '业务端跳转地址',
         submenu: [
-          {
-            icon: '',
-            title: "个人收益",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "订单明细",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "运价查询",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "搜索客户",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "客户列表",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "添加客户",
-            url: '跳转地址'
-          }
+          // {
+          //   icon: '',
+          //   title: "个人收益",
+          //   url: '跳转地址'
+          // },
+          // {
+          //   icon: '',
+          //   title: "订单明细",
+          //   url: '跳转地址'
+          // },
+          // {
+          //   icon: '',
+          //   title: "运价查询",
+          //   url: '跳转地址'
+          // },
+          // {
+          //   icon: '',
+          //   title: "搜索客户",
+          //   url: '跳转地址'
+          // },
+          // {
+          //   icon: '',
+          //   title: "客户列表",
+          //   url: '跳转地址'
+          // },
+          // {
+          //   icon: '',
+          //   title: "添加客户",
+          //   url: '跳转地址'
+          // }
         ]
       },
       {
-        icon: '',
+        icon: 'rate',
         title: '拖车端',
         hidden: true,
-        submenu: [
-          {
+        url: '',
+        submenu: [{
             icon: '',
             title: "对账单",
             url: '跳转地址'
@@ -79,8 +79,8 @@ Page({
         icon: '',
         title: '平台端',
         hidden: true,
-        submenu: [
-          {
+        url: '',
+        submenu: [{
             icon: '',
             title: "个人收益",
             url: '跳转地址'
@@ -116,8 +116,8 @@ Page({
         icon: '',
         title: '我的',
         hidden: true,
-        submenu: [
-          {
+        url: '',
+        submenu: [{
             icon: '',
             title: "用户协议",
             url: '跳转地址'
@@ -150,7 +150,7 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
+  onLoad: function(options) {
 
   },
 
