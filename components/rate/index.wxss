@@ -2,6 +2,8 @@
 @import '../../app.wxss';
 
 .rate {
+  width: 100%;
+  height: 56px;
   box-sizing: border-box;
   font-size: 14px;
   color: #ddd;
