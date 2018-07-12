@@ -9,6 +9,7 @@
     "steps": "../../components/steps/index",
     "table-list": "../../components/table-list/index",
     "rate": "../../components/rate/index",
-    "scroll-panel": "../../components/scroll-panel/index"
+    "scroll-panel": "../../components/scroll-panel/index",
+    "popup-menu": "../../components/popup-menu/index"
   }
 }

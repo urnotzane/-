@@ -17,11 +17,11 @@
     <pop-toast id="popToast" bind:confirmCancel="confirmCancel"></pop-toast>
   </view>
 
-  <view wx:if="{{type=='rate'||type=='all'}}" class="container-cell">
+  <view wx:if="{{type=='rate'||type=='all'}}" class="container-cell scroll-panel">
     <view class="component-title">评分</view>
-    可修改
+    <text>可修改</text>
     <rate bind:goodTap="goodTap" id="rate" starNum='5' goodNum='0' readOnly="false"></rate>
-    只读
+    <text>只读</text>
     <rate bind:goodTap="goodTap" id="rate" starNum='5' goodNum='3' readOnly="true"></rate>
   </view>
 
@@ -57,6 +57,11 @@
   <view wx:if="{{type=='table-list'||type=='all'}}" class='container-cell'>
     <view class="component-title">表格</view>
     <table-list id="table-list" list="{{tableList}}"></table-list>
+  </view>
+
+  <view wx:if="{{type=='popup-menu'||type=='all'}}" class='container-cell'>
+    <view class="component-title">右侧弹出菜单</view>
+    <popup-menu list="{{tabs}}"></popup-menu>
   </view>
 
 </view>

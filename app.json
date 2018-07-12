@@ -1,6 +1,6 @@
 {
   "pages": [
-    "pages/home/fold-menu"
+    "pages/fold-menu/fold-menu"
   ],
   "window": {
     "backgroundTextStyle": "light",

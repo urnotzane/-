@@ -4,7 +4,7 @@
 }
 
 .container-cell{
-  margin: 10px 15px;
+  margin: 10px 0;
   margin-bottom: 20px;
 }
 
@@ -12,7 +12,7 @@
   color: #33d1bf;
   font-size: 16px;
   font-weight: bold;
-  padding: 5px 0;
+  padding: 5px 15px;
 }
 
 #count-down {

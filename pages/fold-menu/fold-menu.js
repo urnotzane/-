@@ -51,6 +51,11 @@ Page({
             icon: '',
             title: "滚动信息",
             url: 'scroll-panel'
+          }, 
+          {
+            icon: '',
+            title: "右侧弹出菜单",
+            url: 'popup-menu'
           },
           {
             icon: '',
