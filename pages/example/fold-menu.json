@@ -1,6 +1,14 @@
 {
   "navigationBarTitleText": "底部多级菜单",
   "usingComponents": {
-    "fold-menu": "../../components/fold-menu/index"
+    "fold-menu": "../../components/fold-menu/index",
+    "pop-toast": "../../components/pop-toast/index",
+    "select-list": "../../components/select-list/index",
+    "count-down": "../../components/count-down/index",
+    "counter": "../../components/counter/index",
+    "steps": "../../components/steps/index",
+    "table-list": "../../components/table-list/index",
+    "rate": "../../components/rate/index",
+    "scroll-panel": "../../components/scroll-panel/index"
   }
 }

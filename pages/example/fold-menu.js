@@ -7,9 +7,9 @@ Page({
   data: {
     tabs: [{
         icon: 'rate',
-        title: '业务端',
+        title: '提示',
         hidden: true,
-        url: '业务端跳转地址',
+        url: 'pop-toast',
         submenu: [
           // {
           //   icon: '',
@@ -45,107 +45,75 @@ Page({
       },
       {
         icon: 'rate',
-        title: '拖车端',
+        title: '组件',
         hidden: true,
         url: '',
         submenu: [{
             icon: '',
-            title: "对账单",
-            url: '跳转地址'
+            title: "选中列表",
+            url: 'select-list'
           },
           {
             icon: '',
-            title: "申请借款",
-            url: '跳转地址'
+            title: "倒计时",
+            url: 'count-down'
           },
           {
             icon: '',
-            title: "历史运单",
-            url: '跳转地址'
+            title: "计数器",
+            url: 'counter'
           },
           {
             icon: '',
-            title: "已接运单",
-            url: '跳转地址'
+            title: "步骤",
+            url: 'steps'
           },
           {
             icon: '',
-            title: "待接运单",
-            url: '跳转地址'
-          }
-        ]
-      },
-      {
-        icon: '',
-        title: '平台端',
-        hidden: true,
-        url: '',
-        submenu: [{
-            icon: '',
-            title: "个人收益",
-            url: '跳转地址'
+            title: "表格",
+            url: 'table-list'
           },
           {
             icon: '',
-            title: "订单明细",
-            url: '跳转地址'
+            title: "评分",
+            url: 'rate'
           },
           {
             icon: '',
-            title: "运价查询",
-            url: '跳转地址'
+            title: "滚动信息",
+            url: 'scroll-panel'
           },
           {
             icon: '',
-            title: "搜索客户",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "客户列表",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "添加客户",
-            url: '跳转地址'
-          }
-        ]
-      },
-      {
-        icon: '',
-        title: '我的',
-        hidden: true,
-        url: '',
-        submenu: [{
-            icon: '',
-            title: "用户协议",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "推荐给朋友",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "密码修改",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "我的车辆",
-            url: '跳转地址'
-          },
-          {
-            icon: '',
-            title: "个人信息",
-            url: '跳转地址'
+            title: "组件大团圆",
+            url: 'all'
           }
         ]
       }
     ],
-    height: 0
+    height: 0,
+    type: '',
+    list: [{
+        title: '标题',
+        desc: '描述特别长描述特别长描述特别长描述特别长描述特别长描述特别长描述特别长描述特别长描述特别长描述特别长'
+      },
+      {
+        title: '标题',
+        desc: '描述'
+      },
+      {
+        title: '标题',
+        desc: '描述'
+      },
+      {
+        title: '标题',
+        desc: '描述'
+      },
+      {
+        title: '标题',
+        desc: '描述'
+      },
+    ],
   },
 
   /**
@@ -161,6 +129,11 @@ Page({
     if (e.detail.height) {
       this.setData({
         height: e.detail.height
+      })
+    }
+    if (e.detail.url) {
+      this.setData({
+        type: e.detail.url
       })
     }
   }

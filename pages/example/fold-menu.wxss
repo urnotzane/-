@@ -2,3 +2,30 @@
   width: 100%;
   height: 100%;
 }
+#count-down{
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+}
+.container .weui-btn{
+  width: 100px;
+display: block;
+background-color: #00a0ea;
+margin: 10px auto;
+padding: 5px 20px;
+}
+
+
+page{
+  font-size: 14px;
+}
+
+text{
+  padding-left: 20px;
+}
+
+#select-list {
+  width: 100%;
+}

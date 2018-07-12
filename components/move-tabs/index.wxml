@@ -1,9 +1,0 @@
-<!-- 组件模板 -->
-<view class="my-tabs">
-  <view class='tabs-header' bindtouchmove='bindtouchend' bindtouchstart='bindtouchstart' style="transform: translateX({{left}}px)">
-    <view class='item {{active == index ? "active" : ""}}' wx:for="{{list}}" wx:key="{{index}}" bindtap="bindtap" data-index="{{index}}" style="width: {{itemW}}px;">{{item}}</view>
-  </view>
-  <view class='tabs-body'>
-    <slot></slot>
-  </view>
-</view>

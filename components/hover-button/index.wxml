@@ -1,4 +1,0 @@
-<!-- 组件模板 -->
-<view class="hover-button" catchtouchmove='onMove' catchtouchend='onEnd' catchtap='onTap' style="right: {{right}}px;bottom:{{bottom}}px;">
-  <slot></slot>
-</view>
