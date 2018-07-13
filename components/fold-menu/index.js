@@ -56,7 +56,7 @@ Component({
       // wx.redirectTo({
       //   url: 'e.currentTarget.dataset.url',
       // })
-      this.triggerEvent("bindGetInfo", e.currentTarget.dataset);
+      this.triggerEvent("bindGetInfo", e.currentTarget.dataset.item);
     }
 
   },

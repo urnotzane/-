@@ -7,14 +7,14 @@ Page({
   data: {
     tabs: [{
         icon: 'rate',
-        title: '提示',
+        tabTitle: '提示',
         hidden: true,
         url: 'pop-toast',
         submenu: []
       },
       {
         icon: 'rate',
-        title: '组件',
+        tabTitle: '组件',
         hidden: true,
         url: '',
         submenu: [{
@@ -51,7 +51,7 @@ Page({
             icon: '',
             title: "滚动信息",
             url: 'scroll-panel'
-          }, 
+          },
           {
             icon: '',
             title: "右侧弹出菜单",
@@ -148,7 +148,7 @@ Page({
       },
     ],
     isDone: 3,
-    
+
   },
 
   /**
@@ -169,6 +169,16 @@ Page({
     if (e.detail.url) {
       this.setData({
         type: e.detail.url
+      })
+    }
+    if (e.detail.title) {
+      wx.setNavigationBarTitle({
+        title: e.detail.title,
+      })
+    }
+    if (e.detail.submenu && e.detail.submenu.length <= 0) {
+      wx.setNavigationBarTitle({
+        title: e.detail.tabTitle,
       })
     }
   },

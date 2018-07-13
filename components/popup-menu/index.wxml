@@ -1,5 +1,11 @@
 <!-- AUTHOR @ ZANE -->
 
-<view class="popup-menu" style="height:{{height}}px">
-hi
+<view class="popup-menu">
+  <view class="popup-menu-title">
+    菜单
+  </view>
+
+  <view class="menu-list">
+    <view class="menu-name"></view>
+  </view>
 </view>
