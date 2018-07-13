@@ -38,9 +38,13 @@ Component({
         })
       } else {
         console.log(e.currentTarget.dataset)
-        // wx.redirectTo({
-        //   url: 'e.currentTarget.dataset.url',
-        // })
+        // 如果子菜单未显示，显示子菜单并隐藏其它子菜单
+        this.data.tabs.map(item => {
+          item.hidden = true
+        })
+        this.setData({
+          tabs: this.data.tabs,
+        })
       }
       this.triggerEvent("bindGetInfo", this.data.tabs[index]);
     },

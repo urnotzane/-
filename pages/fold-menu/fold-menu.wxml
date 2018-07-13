@@ -1,6 +1,11 @@
 <view class='container' style='padding-bottom:{{height}}px'>
   <fold-menu bind:bindGetInfo="bindGetInfo" id="fold-menu" tabs="{{tabs}}"></fold-menu>
 
+  <view class='container-cell'>
+    <view class="component-title">小心！右侧会弹出菜单！！！</view>
+    <popup-menu popMenuHeader="{{popMenuHeader}}" bind:bindPopMenu="bindPopMenu" popMenuList="{{popMenuList}}"></popup-menu>
+  </view>
+
   <view wx:if="{{type=='count-down'||type=='all'}}" class='container-cell'>
     <view class="component-title">倒计时</view>
     <count-down id="count-down" days="3" hours="0" minutes='0' seconds="0" bind:bindCount="bindCount"></count-down>
@@ -59,9 +64,5 @@
     <table-list id="table-list" list="{{tableList}}"></table-list>
   </view>
 
-   <view wx:if="{{type=='popup-menu'||type=='all'}}" class='container-cell'>
-    <view class="component-title">右侧弹出菜单</view>
-    <popup-menu popMenuHeader="{{popMenuHeader}}" popMenuList="{{popMenuList}}"></popup-menu>
-  </view> 
 
 </view>

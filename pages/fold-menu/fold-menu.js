@@ -65,7 +65,7 @@ Page({
         ]
       }
     ],
-    popMenuHeader: ['caidan', '组件菜单'],
+    popMenuHeader: ['caidan', '菜单'],
     popMenuList: [{
         icon: '',
         title: "选中列表",
@@ -228,6 +228,17 @@ Page({
         title: e.detail.tabTitle,
       })
     }
+  },
+
+  // 右侧弹出菜单
+  bindPopMenu: function(e) {
+    console.log(e.detail)
+    this.setData({
+      type: e.detail.url
+    })
+    wx.setNavigationBarTitle({
+      title: e.detail.title,
+    })
   },
 
   // 倒计时
