@@ -1,11 +1,16 @@
 <!-- AUTHOR @ ZANE -->
 
-<view class="popup-menu">
-  <view class="popup-menu-title">
-    菜单
+<view class="menu-mask" bindtap="_bindHide" hidden='{{menuHidden}}'></view>
+<view class="popup-menu" style="animation:{{menuHidden?'popright 2s':'popleft 0.5s'}};">
+  <view class="popup-menu-header">
+    <icon class="iconfont icon-{{popMenuHeader[0]}}"></icon>
+    <text class="header-value">{{popMenuHeader[1]}}</text>
   </view>
 
-  <view class="menu-list">
-    <view class="menu-name"></view>
+  <view class="menu-list" wx:for="{{popMenuList}}" wx:key="{{index}}">
+    <view class="menu-title" data-item="{{item}}">
+      <icon class="iconfont icon-{{item.icon}}" wx:if="{{item.icon}}"></icon>
+      <text class='list-value'>{{item.title}}</text>
+    </view>
   </view>
 </view>

@@ -65,6 +65,53 @@ Page({
         ]
       }
     ],
+    popMenuHeader: ['caidan', '组件菜单'],
+    popMenuList: [{
+        icon: '',
+        title: "选中列表",
+        url: 'select-list'
+      },
+      {
+        icon: '',
+        title: "倒计时",
+        url: 'count-down'
+      },
+      {
+        icon: '',
+        title: "计数器",
+        url: 'counter'
+      },
+      {
+        icon: '',
+        title: "步骤",
+        url: 'steps'
+      },
+      {
+        icon: '',
+        title: "表格",
+        url: 'table-list'
+      },
+      {
+        icon: '',
+        title: "评分",
+        url: 'rate'
+      },
+      {
+        icon: '',
+        title: "滚动信息",
+        url: 'scroll-panel'
+      },
+      {
+        icon: '',
+        title: "右侧弹出菜单",
+        url: 'popup-menu'
+      },
+      {
+        icon: '',
+        title: "组件大团圆",
+        url: 'all'
+      }
+    ],
     height: 0,
     type: 'all',
     toastList: [

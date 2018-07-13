@@ -59,9 +59,9 @@
     <table-list id="table-list" list="{{tableList}}"></table-list>
   </view>
 
-  <view wx:if="{{type=='popup-menu'||type=='all'}}" class='container-cell'>
+   <view wx:if="{{type=='popup-menu'||type=='all'}}" class='container-cell'>
     <view class="component-title">右侧弹出菜单</view>
-    <popup-menu list="{{tabs}}"></popup-menu>
-  </view>
+    <popup-menu popMenuHeader="{{popMenuHeader}}" popMenuList="{{popMenuList}}"></popup-menu>
+  </view> 
 
 </view>

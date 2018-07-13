@@ -1,2 +1,73 @@
 /* AUTHOR @ ZANE */
 @import '../../app.wxss';
+
+.popup-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fff;
+  color: #555;
+  padding: 5px 0;
+  /* animation: popright 3s; */
+}
+
+@keyframes popleft {
+  from {
+    right: -100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+
+@keyframes popright {
+  from {
+    right: 0;
+  }
+
+  to {
+    right: -100%;
+  }
+}
+
+.menu-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.popup-menu icon {
+  display: inline;
+  padding-right: 10px;
+}
+
+.popup-menu .iconfont {
+  font-size: 14px;
+}
+
+.popup-menu .popup-menu-header {
+  position: relative;
+  z-index: 1000;
+  line-height: 28px;
+  padding: 5px 15px;
+}
+
+.popup-menu .popup-menu-header .header-value {
+  font-weight: bold;
+}
+
+.popup-menu .menu-list {
+  padding: 5px 15px;
+  position: relative;
+  z-index: 1000;
+}
+
+.popup-menu .menu-list .menu-title {
+  margin-left: 23px;
+}
