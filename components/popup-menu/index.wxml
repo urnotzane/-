@@ -1,8 +1,8 @@
 <!-- AUTHOR @ ZANE -->
 
-<view class="menu-mask" bindtap="_bindHide" hidden='{{maskHidden}}'></view>
-<button class='menu-btn' bindtap='_bindShow'>{{popMenuHeader[1]}}</button>
-<view class="popup-menu" hidden="{{menuHidden}}" style="animation:{{maskHidden?'popright 1s':'popleft 0.5s'}};">
+<view class="menu-mask" bindtap="_bindShowHide" hidden='{{maskHidden}}'></view>
+<button class='menu-btn' bindtap='_bindShowHide'>{{popMenuHeader[1]}}</button>
+<view class="popup-menu" hidden="{{menuHidden}}" style="animation:{{maskHidden?'popright 0.5s':'popleft 0.5s'}};">
   <view class="popup-menu-header">
     <icon class="iconfont icon-{{popMenuHeader[0]}}"></icon>
     <text class="header-value">{{popMenuHeader[1]}}</text>
@@ -10,7 +10,7 @@
 
   <view class="menu-list" wx:for="{{popMenuList}}" wx:key="{{index}}">
     <view class="menu-title" data-item="{{item}}" bindtap='_bindTo'>
-      <icon class="iconfont icon-{{item.icon}}" wx:if="{{item.icon}}"></icon>
+      <icon class="iconfont icon-{{item.icon}}" wx:if="{{item.icon}}"></icon> 
       <text class='list-value'>{{item.title}}</text>
     </view>
   </view>

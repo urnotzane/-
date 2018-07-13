@@ -3,49 +3,38 @@
 
 .popup-menu {
   position: fixed;
-  top: 0;
-  right: 0;
+  bottom: 40px;
+  right: 40px;
   z-index: 1001;
-  /* height: 100%; */
   background-color: #fff;
   color: #555;
   padding: 5px 0;
-  /* animation: popright 3s; */
+  transform-origin: right bottom;
 }
 
 @keyframes popleft {
-  from {
-    right: -100%;
-  }
-
-  to {
-    right: 0;
-  }
+  0%{transform: scale(0);}
+	100%{ transform: scale(1);}
 }
 
 @keyframes popright {
-  from {
-    right: 0;
-  }
-
-  to {
-    right: -100%;
-  }
+  0%{transform: scale(1);}
+	100%{ transform: scale(0);}
 }
 
 .menu-btn{
   width: 50px;
   height: 50px;
+  z-index: 1002;
   box-sizing: border-box;
   font-size: 12px;
   background-color: #33d1bf;
   color: #fff;
   border-radius: 50%;
   padding: 0;
-  box-shadow: 0 0 10px #ccc;
   line-height: 50px;
   position: fixed;
-  bottom: 100px;
+  bottom: 15px;
   right: 15px;
   text-align: center;
 }
