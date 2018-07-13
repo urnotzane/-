@@ -13,16 +13,26 @@
 }
 
 @keyframes popleft {
-  0%{transform: scale(0);}
-	100%{ transform: scale(1);}
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes popright {
-  0%{transform: scale(1);}
-	100%{ transform: scale(0);}
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
 }
 
-.menu-btn{
+.menu-btn {
   width: 50px;
   height: 50px;
   z-index: 1002;
@@ -49,13 +59,10 @@
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.popup-menu icon {
-  display: inline;
-  padding-right: 10px;
-}
-
 .popup-menu .iconfont {
   font-size: 14px;
+  display: inline;
+  padding-right: 10px;
 }
 
 .popup-menu .popup-menu-header {
@@ -76,5 +83,5 @@
 }
 
 .popup-menu .menu-list .menu-title {
-  margin-left: 23px;
+  margin: 0 23px;
 }

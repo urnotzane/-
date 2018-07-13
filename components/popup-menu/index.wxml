@@ -4,13 +4,13 @@
 <button class='menu-btn' bindtap='_bindShowHide'>{{popMenuHeader[1]}}</button>
 <view class="popup-menu" hidden="{{menuHidden}}" style="animation:{{maskHidden?'popright 0.5s':'popleft 0.5s'}};">
   <view class="popup-menu-header">
-    <icon class="iconfont icon-{{popMenuHeader[0]}}"></icon>
-    <text class="header-value">{{popMenuHeader[1]}}</text>
+    <span class="iconfont icon-{{popMenuHeader[0]||'caidan'}}"></span>
+    <text class="header-value">{{popMenuHeader[1]||'菜单'}}</text>
   </view>
 
   <view class="menu-list" wx:for="{{popMenuList}}" wx:key="{{index}}">
     <view class="menu-title" data-item="{{item}}" bindtap='_bindTo'>
-      <icon class="iconfont icon-{{item.icon}}" wx:if="{{item.icon}}"></icon> 
+      <span class="iconfont icon-{{item.icon}}" wx:if="{{item.icon}}"></span>
       <text class='list-value'>{{item.title}}</text>
     </view>
   </view>

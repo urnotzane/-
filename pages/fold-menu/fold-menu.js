@@ -6,14 +6,14 @@ Page({
    */
   data: {
     tabs: [{
-        icon: 'rate',
+        icon: 'caidan',
         tabTitle: '提示',
         hidden: true,
         url: 'pop-toast',
         submenu: []
       },
       {
-        icon: 'rate',
+        icon: 'caidan',
         tabTitle: '组件',
         hidden: true,
         url: '',
@@ -45,7 +45,7 @@ Page({
           {
             icon: '',
             title: "评分",
-            url: 'rate'
+            url: 'caidan'
           },
           {
             icon: '',
@@ -94,7 +94,7 @@ Page({
       {
         icon: '',
         title: "评分",
-        url: 'rate'
+        url: 'caidan'
       },
       {
         icon: '',

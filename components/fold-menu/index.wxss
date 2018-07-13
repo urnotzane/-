@@ -10,6 +10,11 @@
   height: 100%;
 }
 
+.fold-menu .iconfont{
+  display: inline;
+  padding-right: 10px;
+}
+
 .fold-menu {
   box-sizing: border-box;
   position: fixed;

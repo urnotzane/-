@@ -18,8 +18,6 @@ Component({
   },
 
   methods: {
-    // 菜单隐藏
-    _bindHide: function () { },
 
     // 显示
     _bindShowHide: function () {
@@ -42,7 +40,7 @@ Component({
 
 
     _bindTo: function (e) {
-      this._bindHide()
+      this._bindShowHide()
       this.triggerEvent("bindPopMenu", e.currentTarget.dataset.item);
     }
   },
