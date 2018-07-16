@@ -2,16 +2,8 @@
 
  <view class="scroll-panel" style="background-color:{{bkCol?bkCol:'#33d1bf'}}">
   <view class='scroll-font'>
-    <view class='font-area' style="--marqueeHeight--:{{-marqueeHeight}}px;--marqueeSpeed--:{{marqueeSpeed}}s;--marqueeWidth--:{{-marqueeWidth}}px;white-space:{{scrollWay=='left'||scrollWay=='right'?'nowrap':'normal'}}; width:{{scrollWay=='left'||scrollWay=='right'?'auto':'100%'}};--direction--:{{scrollWay}}Move;">
-      <text style="font-size:12px;margin-right:{{scrollWay=='left'||scrollWay=='right'?'30px':''}}; display:{{scrollWay=='left'||scrollWay=='right'?'inline':'block'}};margin-bottom:{{scrollWay=='left'||scrollWay=='right'?'':'20px'}} " wx:for="{{notice}}" wx:key="{{index}}">{{index+1}}、{{item}}</text>
+    <view class='font-area' style="font-size:12px;white-space:{{scrollWay=='left'||scrollWay=='right'?'nowrap':'normal'}}; width:{{scrollWay=='left'||scrollWay=='right'?'auto':'100%'}};left:{{left}}px;top:{{top}}px ;">
+      <text style="font-size:12px;margin-right:{{scrollWay=='left'||scrollWay=='right'?'30px':''}}; display:{{scrollWay=='left'||scrollWay=='right'?'inline':'block'}};margin-bottom:{{scrollWay=='left'||scrollWay=='right'?'':'20px'}};" wx:for="{{notice}}" wx:key="{{index}}">{{index+1}}、{{item}}</text>
     </view>
   </view>
 </view> 
-
-<!-- <view class="scroll-panel">
-  <view class='scroll-font'>
-    <view class='font-area' style="top:{{top}}px;margin-left:{{left}}px;white-space:{{scrollWay=='left'||scrollWay=='right'?'nowrap':'normal'}}; width:{{scrollWay=='left'||scrollWay=='right'?'auto':'100%'}};">
-      <text style="font-size:12px;margin-right:{{scrollWay=='left'||scrollWay=='right'?'30px':''}}; display:{{scrollWay=='left'||scrollWay=='right'?'inline':'block'}};margin-bottom:{{scrollWay=='left'||scrollWay=='right'?'':'20px'}} " wx:for="{{notice}}" wx:key="{{index}}">{{index+1}}、{{item}}</text>
-    </view>
-  </view>
-</view> -->

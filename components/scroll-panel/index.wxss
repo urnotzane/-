@@ -22,8 +22,6 @@
 
 .font-area {
   position: relative;
-   animation: var(--direction--) var(--marqueeSpeed--) infinite; 
-  animation-timing-function: linear; /*匀速*/
   display: inline-block;
   font-size: 12px;
 }

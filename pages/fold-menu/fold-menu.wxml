@@ -58,16 +58,16 @@
   <view wx:if="{{type=='scroll-panel'||type=='all'}}" class="container-cell scroll-panel">
     <view class="component-title">滚动信息（可自定义背景颜色）</view>
     <text>向左</text>
-    <scroll-panel marqueeSpeed='8' scrollWay='left' notice="{{notice}}"></scroll-panel>
+    <scroll-panel marqueeSpeed='1' scrollWay='left' notice="{{notice}}"></scroll-panel>
 
-    <text>向右</text>
-    <scroll-panel bkCol="#f30" marqueeSpeed='8' scrollWay='right' notice="{{notice}}"></scroll-panel>
+    <!-- <text>向右</text>
+    <scroll-panel bkCol="#f30" marqueeSpeed='8' scrollWay='right' notice="{{notice}}"></scroll-panel> -->
 
     <text>向上</text>
-    <scroll-panel bkCol="#5083ee" marqueeSpeed='8' scrollWay='up' notice="{{notice}}"></scroll-panel>
+    <scroll-panel bkCol="#5083ee" marqueeSpeed='1' scrollWay='up' notice="{{notice}}"></scroll-panel>
 
-    <text>向下</text>
-    <scroll-panel bkCol="#1aad19" marqueeSpeed='8' scrollWay='down' notice="{{notice}}"></scroll-panel>
+    <!-- <text>向下</text>
+    <scroll-panel bkCol="#1aad19" marqueeSpeed='8' scrollWay='down' notice="{{notice}}"></scroll-panel> -->
   </view>
 
 

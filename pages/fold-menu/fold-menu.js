@@ -111,14 +111,14 @@ Page({
       },
       {
         icon: '',
-        title: "组件大团圆",
-        url: 'all'
+        title: "可拖拽悬浮按钮",
+        url: 'suspend-button'
       },
       {
         icon: '',
-        title: "可拖拽悬浮按钮",
-        url: 'suspend-button'
-      }
+        title: "组件大团圆",
+        url: 'all'
+      },
     ],
     height: 0,
     type: 'all',
