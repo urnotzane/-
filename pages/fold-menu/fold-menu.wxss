@@ -15,9 +15,9 @@
   padding: 5px 15px;
 }
 
-#count-down {
+/* #count-down {
   width: 100%;
-}
+} */
 
 .container {
   width: 100%;
@@ -37,8 +37,4 @@ page {
 
 .scroll-panel text {
   padding-left: 20px;
-}
-
-#select-list {
-  width: 100%;
 }

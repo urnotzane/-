@@ -7,7 +7,6 @@
   box-sizing: border-box;
   font-size: 12px;
   color: #fff;
-  background-color: #33d1bf;
   margin: 10px 0;
   padding: 8px 20px;
   width: 100%;

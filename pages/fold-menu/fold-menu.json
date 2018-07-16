@@ -10,6 +10,7 @@
     "table-list": "../../components/table-list/index",
     "rate": "../../components/rate/index",
     "scroll-panel": "../../components/scroll-panel/index",
-    "popup-menu": "../../components/popup-menu/index"
+    "popup-menu": "../../components/popup-menu/index",
+    "suspend-button": "../../components/suspend-button/index"
   }
 }

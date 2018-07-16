@@ -54,6 +54,11 @@ Page({
             icon: '',
             title: "右侧弹出菜单",
             url: 'popup-menu'
+          }, 
+          {
+            icon: '',
+            title: "可拖拽悬浮按钮",
+            url: 'suspend-button'
           },
           {
             icon: '',
@@ -108,6 +113,11 @@ Page({
         icon: '',
         title: "组件大团圆",
         url: 'all'
+      },
+      {
+        icon: '',
+        title: "可拖拽悬浮按钮",
+        url: 'suspend-button'
       }
     ],
     height: 0,
@@ -209,11 +219,7 @@ Page({
     wx.setClipboardData({
       data: 'https://github.com/urnotzane/miniProgramComponents',
       success: res => {
-        const arr = [{
-          value: '复制成功'
-        }]
-        //type=list，仅调用show函数
-        this.popToast._showToast('tip', arr);
+        console.log('复制成功')
       }
     })
   },

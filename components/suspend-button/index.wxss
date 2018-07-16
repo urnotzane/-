@@ -1,0 +1,9 @@
+/* AUTHOR @ ZANE */
+
+.suspend-button {
+  box-sizing: border-box;
+  font-size: 14px;
+  width: 100%;
+  background-color: #fff;
+  color: #222;
+}

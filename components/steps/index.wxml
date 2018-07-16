@@ -3,7 +3,7 @@
 <view class="steps">
   <view class='steps-cell' wx:for="{{stepsData}}" wx:key="{{index}}">
     <view class='steps-strip'>
-      <view class="strip-dot {{isDone>index?'isDone':''}}"></view>
+      <view class="strip-dot {{isDone>index?'isDone':''}}" ></view>
       <view hidden='{{stepsData.length==index+1}}' style="border-color:{{isDone>index+1?'#33d1bf':''}}" class="strip-vertical"></view>
     </view>
     <view class='steps-content'>

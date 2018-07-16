@@ -5,6 +5,7 @@ Component({
     marqueeSpeed: Number,            //速度
     scrollWay: String,               //滚动方式：up/down/left/right
     notice: Array,                   //通知文字
+    bkCol: String,                   //背景颜色
   },
 
   data: {
