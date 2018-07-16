@@ -78,10 +78,19 @@ Component({
         })
       },
     })
+    // 设置子菜单隐藏
+    this.data.tabs.forEach(item => {
+      item.hidden = true
+    })
+    this.setData({
+      tabs: this.data.tabs
+    })
 
+    // 兼容iphonex、
     this.triggerEvent("bindGetInfo", {
       height: this.data.height
     });
   }
+
 
 })

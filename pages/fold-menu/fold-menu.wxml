@@ -1,8 +1,9 @@
 <view class='container' style='padding-bottom:{{height}}px'>
-  <fold-menu wx:if="{{type=='all'}}"  bind:bindGetInfo="bindGetInfo" id="fold-menu" tabs="{{tabs}}"></fold-menu>
 
-  <view class='container-cell'  wx:if="{{type!='all'}}">
-    <view class="component-title">小心！右下角会弹出菜单！！！</view>
+  <fold-menu wx:if="{{type=='all'}}" bind:bindGetInfo="bindGetInfo" id="fold-menu" tabs="{{tabs}}"></fold-menu>
+
+  <view class='container-cell' wx:if="{{type!='all'}}">
+    <view class="component-title">右下角弹出菜单！！！</view>
     <popup-menu popMenuHeader="{{popMenuHeader}}" bind:bindPopMenu="bindPopMenu" popMenuList="{{popMenuList}}"></popup-menu>
   </view>
 
@@ -64,5 +65,11 @@
     <table-list id="table-list" list="{{tableList}}"></table-list>
   </view>
 
+
+  <view class='container-cell'>
+    <view class="component-title">本组件git地址（点击下方链接可复制）：</view>
+    <view bindtap='bindCopy' style="color:#33d1bf;text-decoration: underline;margin:0 15px;word-break: break-all; word-wrap:break-word;">https://github.com/urnotzane/miniProgramComponents</view>
+    <view style="color:#33d1bf;margin:0 15px;word-break: break-all; word-wrap:break-word;">欢迎各位访问指教~</view>
+  </view>
 
 </view>

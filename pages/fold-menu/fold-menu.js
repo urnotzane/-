@@ -8,14 +8,12 @@ Page({
     tabs: [{
         icon: 'caidan',
         tabTitle: '提示',
-        hidden: true,
         url: 'pop-toast',
         submenu: []
       },
       {
         icon: 'caidan',
         tabTitle: '组件',
-        hidden: true,
         url: '',
         submenu: [{
             icon: '',
@@ -45,7 +43,7 @@ Page({
           {
             icon: '',
             title: "评分",
-            url: 'caidan'
+            url: 'rate'
           },
           {
             icon: '',
@@ -94,7 +92,7 @@ Page({
       {
         icon: '',
         title: "评分",
-        url: 'caidan'
+        url: 'rate'
       },
       {
         icon: '',
@@ -205,7 +203,22 @@ Page({
 
   },
 
-  // 组件事件触发
+  // 点击复制
+  bindCopy: function() {
+    this.popToast = this.selectComponent("#popToast");
+    wx.setClipboardData({
+      data: 'https://github.com/urnotzane/miniProgramComponents',
+      success: res => {
+        const arr = [{
+          value: '复制成功'
+        }]
+        //type=list，仅调用show函数
+        this.popToast._showToast('tip', arr);
+      }
+    })
+  },
+
+  // 底部菜单
   bindGetInfo: function(e) {
     console.log(e.detail)
     if (e.detail.height) {
