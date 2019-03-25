@@ -1,4 +1,5 @@
-// pages/example/fold-menu.js
+import moment from 'moment'
+
 Page({
 
   /**
@@ -54,7 +55,7 @@ Page({
             icon: '',
             title: "右侧弹出菜单",
             url: 'popup-menu'
-          }, 
+          },
           {
             icon: '',
             title: "可拖拽悬浮按钮",
@@ -210,7 +211,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
-
+    console.log(moment().format('YYYY-MM-DD HH:mm:ss'))
   },
 
   // 点击复制

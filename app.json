@@ -1,11 +1,30 @@
 {
   "pages": [
-    "pages/fold-menu/fold-menu"
+    "pages/fold-menu/fold-menu",
+    "pages/Home/Home",
+    "custom-tab-bar/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#33d1bf",
     "navigationBarTitleText": "ZANE组件库",
-    "navigationBarTextStyle": "#fff"
-  }
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "backgroundColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/fold-menu/fold-menu",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/fold-menu/fold-menu",
+        "text": "接口"
+      }
+    ]
+  },
+  "usingComponents": {}
 }
