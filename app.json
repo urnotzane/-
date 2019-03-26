@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/fold-menu/fold-menu",
-    "pages/Home/Home",
+    "pages/my/index",
+    "pages/home/index",
     "custom-tab-bar/index"
   ],
   "window": {
@@ -13,15 +13,14 @@
   "tabBar": {
     "custom": true,
     "color": "#000000",
-    "selectedColor": "#000000",
+    "selectedColor": "#33d1bf",
     "backgroundColor": "#000000",
     "list": [
       {
-        "pagePath": "pages/fold-menu/fold-menu",
-        "text": "组件"
-      },
-      {
-        "pagePath": "pages/fold-menu/fold-menu",
+        "pagePath": "pages/my/index",
+        "text": "接口"
+      },{
+        "pagePath": "pages/home/index",
         "text": "接口"
       }
     ]

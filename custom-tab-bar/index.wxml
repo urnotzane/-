@@ -1,1 +1,10 @@
-<view>自定义tabbar</view>
+<view class="tab_bar">
+  <view 
+    class="{{active===index?'item active':'item'}}" 
+    bindtap="handleTabs" 
+    data-index="{{index}}" 
+    data-item="{{item}}" 
+    wx:for="{{tabs}}" 
+    wx:key="{{index}}"
+    >{{item.title}}</view>
+</view>
