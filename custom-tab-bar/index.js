@@ -1,11 +1,11 @@
 const TABS = [{
-    title: '提示组件',
-    url: '/pages/my/index',
+    title: '首页',
+    url: '/pages/home/index',
     icon: 'icon-menu'
   },
   {
-    title: '交互组件',
-    url: '/pages/home/index',
+    title: '关于',
+    url: '/pages/my/index',
     icon: 'icon-rate'
   }
 ]

@@ -7,4 +7,6 @@ page {
   font-size: 28rpx;
   color: #333;
   background: #f8f8f8;
+  padding-top: 120rpx;
+  padding-top: calc(env(safe-area-inset-bottom) + 110rpx);
 }

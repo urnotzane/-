@@ -1,1 +1,18 @@
-/* pages/Home/index.wxss */
+.navs {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1024;
+  height: 120rpx;
+  background-image: linear-gradient(to left, #43e97b 0%, #38f9d7 100%);
+  color: #fff;
+  font-size: 32rpx;
+  padding-top: calc(env(safe-area-inset-bottom) - 10rpx);
+}
+
+.navs .title{
+  height: 80rpx;
+  line-height: 80rpx;
+  padding: 40rpx 200rpx 0 30rpx;
+}

@@ -8,6 +8,6 @@
     wx:key="{{index}}"
     >
       <view class="iconfont {{item.icon}}"></view>
-      <view>{{item.title}}</view>
+      <view class="title">{{item.title}}</view>
     </view>
 </view>

@@ -1,2 +1,5 @@
-<!--pages/Home/index.wxml-->
-<text>pages/Home/index.wxml</text>
+<view class="navs">
+  <view class='title'>首页</view>
+</view>
+
+<view>首页</view>

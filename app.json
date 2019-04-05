@@ -1,12 +1,13 @@
 {
   "pages": [
-    "pages/my/index",
     "pages/home/index",
+    "pages/my/index",
     "custom-tab-bar/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#33d1bf",
+    "navigationStyle": "custom",
     "navigationBarTitleText": "ZANE组件库",
     "navigationBarTextStyle": "white"
   },
@@ -17,11 +18,11 @@
     "backgroundColor": "#000000",
     "list": [
       {
-        "pagePath": "pages/my/index",
-        "text": "接口"
-      },{
         "pagePath": "pages/home/index",
-        "text": "接口"
+        "text": "组件"
+      },{
+        "pagePath": "pages/my/index",
+        "text": "关于"
       }
     ]
   },
