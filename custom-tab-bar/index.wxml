@@ -6,5 +6,8 @@
     data-item="{{item}}" 
     wx:for="{{tabs}}" 
     wx:key="{{index}}"
-    >{{item.title}}</view>
+    >
+      <view class="iconfont {{item.icon}}"></view>
+      <view>{{item.title}}</view>
+    </view>
 </view>

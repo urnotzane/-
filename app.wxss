@@ -1,8 +1,10 @@
 @import 'styles/iconfont.wxss';
+@import 'styles/weui.wxss';
 
-page{
+page {
   margin: 0;
   padding: 0;
   font-size: 28rpx;
   color: #333;
+  background: #f8f8f8;
 }
