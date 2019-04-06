@@ -1,0 +1,6 @@
+<view class="list_wrapper">
+  <view class="list_cell" wx:for="{{data}}" wx:key="{{index}}">
+    <view class="title">{{item.title}}</view>
+    <view class="description">{{item.description}}</view>
+  </view>
+</view>

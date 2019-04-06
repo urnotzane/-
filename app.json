@@ -6,7 +6,7 @@
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#33d1bf",
+    "navigationBarBackgroundColor": "#409EFF",
     "navigationStyle": "custom",
     "navigationBarTitleText": "ZANE组件库",
     "navigationBarTextStyle": "white"
@@ -14,7 +14,7 @@
   "tabBar": {
     "custom": true,
     "color": "#000000",
-    "selectedColor": "#33d1bf",
+    "selectedColor": "#409EFF",
     "backgroundColor": "#000000",
     "list": [
       {

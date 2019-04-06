@@ -1,0 +1,1 @@
+<Base wx:if="{{type==='base'}}" data="{{data}}" />

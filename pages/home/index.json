@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "Accordion": "/components/accordion/index",
+    "List": "/components/list/index"
+  }
 }

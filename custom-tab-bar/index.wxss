@@ -15,7 +15,7 @@
 }
 
 .item.active {
-  color: #33d1bf;
+  color: #409EFF;
 }
 
 .item .title {

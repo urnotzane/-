@@ -1,0 +1,23 @@
+<view class="accordion_wrapper">
+  <view class="accordion_cell">
+    <view wx:if="{{data.img||data.icon}}" class="accordion_avatar">
+      <image wx:if="{{data.img}}" src="{{data.img}}"></image>
+      <view 
+        wx:if="{{!data.img&&data.icon}}"
+        class="accordion_icon iconfont {{data.icon}}" 
+        style="color: {{iconColor}}">
+      </view>
+    </view>
+    <view class=" accordion_header ">
+      <view class="title ">
+        <text>{{data.name}} </text>
+        <text wx:if="{{data.enName}} ">{{data.enName}}</text>
+      </view>
+      <view wx:if="{{data.description}} " class="description ">{{data.description}}</view>
+    </view>
+    <view class='iconfont icon-right' bindtap="bindExtend"></view>
+  </view>
+  <view wx:if="{{extend}}" class="accordion_main">
+    <slot name="main"></slot>
+  </view>
+</view>
