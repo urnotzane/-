@@ -1,1 +1,5 @@
-<Base wx:if="{{type==='base'}}" data="{{data}}" />
+<Base wx:if="{{type=='base'}}" data="{{data}}" />
+
+<Detail wx:if="{{type=='detail'}}" avatarMode="{{avatarMode}}" data="{{data}}" />
+
+<Msg wx:if="{{type=='msg'}}" avatarMode="{{avatarMode}}" data="{{data}}" />

@@ -1,12 +1,12 @@
 const TABS = [{
     title: '首页',
     url: '/pages/home/index',
-    icon: 'icon-menu'
+    icon: 'zicon_home'
   },
   {
     title: '关于',
     url: '/pages/my/index',
-    icon: 'icon-rate'
+    icon: 'zicon_user'
   }
 ]
 

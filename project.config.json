@@ -10,7 +10,7 @@
 		"nodeModules": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.6.4",
+	"libVersion": "2.6.5",
 	"appid": "wx52ff4852000b8744",
 	"projectname": "ZANE%E7%BB%84%E4%BB%B6%E5%BA%93",
 	"isGameTourist": false,

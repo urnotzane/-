@@ -1,0 +1,22 @@
+.zc_header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1024;
+  background-image: linear-gradient(to left, #0acffe 0%, #409EFF 100%);
+  color: #fff;
+  font-size: 32rpx;
+}
+
+.zc_header .header_title {
+  height: 100rpx;
+  line-height: 100rpx;
+  padding-right: 240rpx;
+  padding-left: 30rpx;
+  display: flex;
+}
+
+.zc_header .header_title .iconfont{
+  margin-right: 10rpx;
+}

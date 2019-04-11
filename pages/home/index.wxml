@@ -1,11 +1,6 @@
-<view class="navs">
-  <view class='title'>首页</view>
-</view>
+<Header title="首页" />
 
 <view class="container">
-  <Accordion wx:for="{{list}}" wx:key="{{index}}" data="{{item}}">
-    <view slot="main">
-      <List type="base" data="{{item.detailList}}" />
-    </view>
-  </Accordion>
+  <List type="base" data="{{list}}" />
 </view>
+

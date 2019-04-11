@@ -1,49 +1,28 @@
 const LIST = [
   {
-    name: '导航',
-    enName: 'Navgator',
-    // description: '列表数据',
-    // icon: 'icon-menu',
+    title: '导航 Navgator',
+    icon: 'zicon_home',
+    url: '/pages/example/index?title=导航 Navgator',
   },
   {
-    name: '列表',
-    enName: 'List',
-    description: '列表数据',
-    // icon: 'icon-menu',
-    img: '/images/rate.png',
-    detailList: [
-      {
-        title: '基础列表',
-        description: '/page/my/index',
-      },
-      {
-        title: '描述列表',
-        description: '/page/my/index'
-      },
-      {
-        title: '消息列表',
-        description: '/page/my/index'
-      },
-    ]
+    title: '列表 List',
+    icon: 'zicon_list',
+    url: '/pages/example/index?title=列表 List',
   },
   {
-    name: '卡片',
-    enName: 'Card',
-    // description: '列表数据',
-    icon: 'icon-menu',
-    img: '/images/rate.png'
+    title: '卡片 Card',
+    icon: 'zicon_card',
+    url: '/pages/example/index?title=卡片 Card',
   },
   {
-    name: '弹窗',
-    enName: 'Modal',
-    description: '列表数据列表数据列表数据列表数据列表数据列表数据列表数据列表数据',
-    icon: 'icon-menu',
+    title: '弹窗 Modal',
+    icon: 'zicon_modal',
+    url: '/pages/example/index?title=弹窗 Modal',
   },
   {
-    name: '手风琴',
-    enName: 'Accordion',
-    description: '基础手风琴、扩展手风琴',
-    icon: 'icon-menu',
+    title: '手风琴 Accordion',
+    icon: 'zicon_xiala',
+    url: '/pages/example/index?title=手风琴 Accordion',
   },
 ]
 
@@ -52,7 +31,7 @@ Page({
     list: LIST
   },
   onLoad: function (options) {
-
+    
   },
 
   onShow() {

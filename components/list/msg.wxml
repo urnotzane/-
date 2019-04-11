@@ -1,0 +1,15 @@
+<view class="zc_list">
+  <view class="list_cell" wx:for="{{data}}" wx:key="{{index}}">
+    <view wx:if="{{item.img}}" class="list_avatar">
+      <image mode="aspectFill" wx:if="{{item.img}}" src="{{item.img}}" class="{{avatarMode}}"></image>
+    </view>
+    <view class="list_body">
+      <view class="title">{{item.title}}</view>
+      <view wx:if="{{item.description}}" class="description">{{item.description}}</view>
+    </view>
+    <view class="list_side">
+      <view class="side_name">{{item.sideName}}</view>
+      <view wx:if="{{item.sideValue}}" class="side_value">{{item.sideValue}}</view>
+    </view>
+  </view>
+</view>

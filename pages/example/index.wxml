@@ -1,0 +1,8 @@
+<Header title="{{title}}" url="back" />
+
+<block wx:if="{{type=='list'}}">
+  <List type="base" data="{{data}}" />
+  <List type="detail" data="{{data}}" />
+  <List type="msg" data="{{data}}" />
+</block>
+

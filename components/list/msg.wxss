@@ -1,0 +1,74 @@
+.zc_list {
+  background: #fff;
+}
+
+.zc_list .list_cell {
+  display: flex;
+  align-items: center;
+  border-top: 1rpx #ededed solid;
+  padding: 0 30rpx;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.zc_list .list_avatar {
+  width: 96rpx;
+  height: 96rpx;
+  margin: 20rpx 20rpx 20rpx 0;
+}
+
+.zc_list .list_avatar image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.zc_list .list_avatar image.circle {
+  border-radius: 50%;
+}
+
+.zc_list .list_avatar image.radius {
+  border-radius: 8rpx;
+}
+
+.zc_list .list_body {
+  line-height: 45rpx;
+  margin: 20rpx 0;
+  flex: 1;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-right: 20rpx;
+}
+
+.zc_list .list_body .description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.zc_list .list_body .description, .zc_list .list_side {
+  font-size: 22rpx;
+  color: #888;
+}
+
+.zc_list .list_side {
+  text-align: center;
+  width: 80rpx;
+}
+
+.zc_list .list_side .side_name {
+  height: 45rpx;
+  line-height: 45rpx;
+}
+
+.zc_list .list_side .side_value {
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  border-radius: 50%;
+  background: #aaa;
+  color: #fff;
+  font-size: 20rpx;
+  box-sizing: border-box;
+  margin: 7rpx 25rpx;
+}

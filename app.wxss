@@ -1,5 +1,4 @@
 @import 'styles/iconfont.wxss';
-@import 'styles/weui.wxss';
 
 page {
   margin: 0;
@@ -7,6 +6,11 @@ page {
   font-size: 28rpx;
   color: #333;
   background: #f8f8f8;
-  padding-top: 120rpx;
-  padding-top: calc(env(safe-area-inset-bottom) + 110rpx);
+  overflow: hidden;
+}
+
+.zicon_next{
+  font-size: 24rpx;
+  color: #aaa;
+  margin-left: 30rpx;
 }

@@ -1,4 +1,4 @@
-.accordion_wrapper {
+.zc_accordion {
   position: relative;
   background: #fff;
   padding: 20rpx 30rpx;
@@ -51,6 +51,6 @@
   font-size: 32rpx;
   color: #ccc;
 }
-.accordion_wrapper .accordion_main{
+.zc_accordion .accordion_main{
   margin-top: 20rpx;
 }

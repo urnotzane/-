@@ -1,7 +1,7 @@
-<view class="accordion_wrapper">
+<view class="zc_accordion">
   <view class="accordion_cell">
     <view wx:if="{{data.img||data.icon}}" class="accordion_avatar">
-      <image wx:if="{{data.img}}" src="{{data.img}}"></image>
+      <image mode="aspectFill" wx:if="{{data.img}}" src="{{data.img}}"></image>
       <view 
         wx:if="{{!data.img&&data.icon}}"
         class="accordion_icon iconfont {{data.icon}}" 
@@ -10,8 +10,7 @@
     </view>
     <view class=" accordion_header ">
       <view class="title ">
-        <text>{{data.name}} </text>
-        <text wx:if="{{data.enName}} ">{{data.enName}}</text>
+        <text>{{data.title}}</text>
       </view>
       <view wx:if="{{data.description}} " class="description ">{{data.description}}</view>
     </view>

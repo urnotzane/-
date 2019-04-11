@@ -1,6 +1,8 @@
 {
   "component": true,
   "usingComponents": {
-    "Base": "base"
+    "Base": "base",
+    "Msg": "msg",
+    "Detail": "detail"
   }
 }

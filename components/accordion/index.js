@@ -1,6 +1,6 @@
 const DEFAULT_DATA = {
-  name: '数据名',
-  enName: 'name',
+  title: '数据名',
+  enTitle: 'name',
   description: 'description',
   icon: 'icon-menu',
   img: '/images/rate.png'

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
+    "Accordion": "/components/accordion/index",
     "List": "/components/list/index",
     "Header": "/components/header/index"
   }
