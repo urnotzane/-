@@ -3,7 +3,8 @@
     "pages/home/index",
     "pages/my/index",
     "custom-tab-bar/index",
-    "pages/example/index"
+    "pages/example/index",
+    "pages/black_example/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

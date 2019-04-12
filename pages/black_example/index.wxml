@@ -1,0 +1,5 @@
+<Header wx: title="{{title}}" url="back" className="{{className}}" />
+
+<block wx:if="{{type=='grid'}}">
+  <Grid type="radius" />
+</block>

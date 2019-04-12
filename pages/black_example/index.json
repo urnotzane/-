@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "Header": "/components/header/index",
+    "Grid": "/components/grid/index"
+  },
+  "navigationBarTextStyle": "black"
+}

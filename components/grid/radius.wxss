@@ -1,0 +1,65 @@
+.zc_grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 20rpx 0;
+}
+
+.zc_grid .grid_item {
+  box-sizing: border-box;
+  width: 200rpx;
+  height: 200rpx;
+  padding: 20rpx;
+  line-height: 45rpx;
+  border-radius: 8rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20rpx;
+}
+
+.zc_grid .item_content {
+  z-index: 2;
+}
+
+.zc_grid .bk_red {
+  background-image: linear-gradient(to top right, #f43f3b 0%, #ec008c 100%);
+}
+
+.zc_grid .bk_orange {
+  background-image: linear-gradient(to top right, #ff4e50 0%, #f9d423 100%);
+}
+
+.zc_grid .bk_green {
+  background-image: linear-gradient(to top right, #39b54a 0%, #8dc63f 100%);
+}
+
+.zc_grid .bk_cyan {
+  background-image: linear-gradient(to top right, #43e97b 0%, #38f9d7 100%);
+}
+
+.zc_grid .bk_blue {
+  background-image: linear-gradient(to top right, #005bea 0%, #00c6fb 100%);
+}
+
+.zc_grid .bk_purple {
+  background-image: linear-gradient(to top right, #7742b2 0%, #fd8bd9 100%);
+}
+
+.zc_grid .bk_dark {
+  background-image: linear-gradient(to top right, #555 0%, #999 50%, #ddd 100%);
+}
+
+.zc_grid .bk_night_call {
+  background-image: linear-gradient(to top right, #ac32e4 0%, #7918f2 30%, #4801ff 100%);
+}
+
+.zc_grid .bk_north_miracle {
+  background-image: linear-gradient(to top right, #fc00ff 0%, #00dbde 100%);
+}
+
+.zc_grid .bk_gagarin {
+  background-image: linear-gradient(to top right, #1EECFF 0%, #6297DB 50%, #77FFD2 100%);
+}

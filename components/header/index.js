@@ -1,4 +1,4 @@
-const app = getApp()
+const STATUS_BAR_HEIGHT = getApp().globalData.statusBarHeight * 2
 
 Component({
   options: {
@@ -15,11 +15,16 @@ Component({
     url: {
       type: String,
       value: ''
+    },
+
+    className: {
+      type: String,
+      value: ''
     }
   },
 
   data: {
-    statusBarHeight: app.globalData.statusBarHeight * 2
+    statusBarHeight: STATUS_BAR_HEIGHT,
   },
 
   methods: {
@@ -27,4 +32,5 @@ Component({
       wx.navigateBack()
     }
   },
+
 })

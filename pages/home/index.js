@@ -1,8 +1,8 @@
 const LIST = [
   {
-    title: '导航 Navgator',
+    title: '导航 Navigator',
     icon: 'zicon_home',
-    url: '/pages/example/index?title=导航 Navgator',
+    url: '/pages/example/index?title=导航 Navigator',
   },
   {
     title: '列表 List',
@@ -23,6 +23,11 @@ const LIST = [
     title: '手风琴 Accordion',
     icon: 'zicon_xiala',
     url: '/pages/example/index?title=手风琴 Accordion',
+  },
+  {
+    title: '宫格 Grid',
+    icon: 'zicon_xiala',
+    url: '/pages/black_example/index?type=grid&title=宫格 Grid&type=grid&className=light_bgColor',
   },
 ]
 

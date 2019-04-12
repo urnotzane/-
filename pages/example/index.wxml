@@ -1,4 +1,4 @@
-<Header title="{{title}}" url="back" />
+<Header wx: title="{{title}}" url="back" className="{{className}}" />
 
 <block wx:if="{{type=='list'}}">
   <List type="base" data="{{data}}" />
