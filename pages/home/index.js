@@ -27,7 +27,7 @@ const LIST = [
   {
     title: '宫格 Grid',
     icon: 'zicon_xiala',
-    url: '/pages/black_example/index?type=grid&title=宫格 Grid&type=grid&className=light_bgColor',
+    url: '/pages/black_example/index?title=宫格 Grid&type=grid&className=white_bgColor'
   },
 ]
 

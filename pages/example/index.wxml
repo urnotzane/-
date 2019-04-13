@@ -6,3 +6,7 @@
   <List type="msg" data="{{data}}" />
 </block>
 
+<block wx:if="{{type=='grid'}}">
+  <Grid type="base" columns="5" border="true" />
+  <Grid type="separate" />
+</block>

@@ -1,0 +1,15 @@
+<view class="zc_grid">
+  <view 
+    wx:for="{{data}}" 
+    wx:key="{{index}}" 
+    class="grid_item shadow_blur {{classNames[index]}}"
+    bindtap="{{item.url?'bindDirect':''}}"
+    data-url="{{item.url}}"
+  >
+    <view class="item_content">
+      <view class="iconfont {{item.icon}}"></view>
+      <view class="title">{{item.title}}</view>
+      <view class="en">{{item.en}}</view>
+    </view>
+  </view>
+</view>

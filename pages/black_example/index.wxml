@@ -1,5 +1,6 @@
 <Header wx: title="{{title}}" url="back" className="{{className}}" />
 
 <block wx:if="{{type=='grid'}}">
-  <Grid type="radius" />
+  <Grid type="base" columns="5" border="true" />
+  <Grid type="separate" />
 </block>

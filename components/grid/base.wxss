@@ -1,0 +1,62 @@
+.zc_grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fff;
+  box-sizing: border-box;
+  border-bottom: 1rpx #eee solid;
+  color: #444;
+}
+
+.zc_grid .grid_item {
+  box-sizing: border-box;
+  padding: 20rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1rpx #eee solid;
+  border-right: 1rpx #eee solid;
+  background: #fff;
+}
+
+.zc_grid .grid_item_4 {
+  width: calc((100vw - 3rpx) / 4);
+  height: calc((100vw - 3rpx) / 4);
+}
+
+.zc_grid .grid_item_5 {
+  width: calc((100vw - 4rpx) / 5);
+  height: calc((100vw - 4rpx) / 5);
+}
+
+.zc_grid .grid_item4:nth-child(4n), .zc_grid .grid_item4:nth-child(5n) {
+  border-right: none;
+}
+
+.zc_grid .item_content {
+  z-index: 2;
+}
+
+.zc_grid .item_content .title{
+  font-size: 20rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+  padding: 0 10rpx;
+  line-height: 45rpx;
+}
+
+.zc_grid .item_content .iconfont{
+  font-size: 50rpx;
+  color: #409eff;
+}
+
+.zc_grid .grid_item_4 .title {
+  width: calc((100vw - 3rpx) / 4);
+}
+
+.zc_grid .grid_item_5 .title {
+  width: calc((100vw - 4rpx) / 5);
+}

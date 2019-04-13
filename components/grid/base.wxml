@@ -1,0 +1,15 @@
+<view class="zc_grid" style="{{border==true?'':'border:none'}}" >
+  <view 
+    wx:for="{{data}}" 
+    wx:key="{{index}}" 
+    style="{{border==true?'':'border:none'}}" 
+    class="grid_item {{'grid_item_' + columns}} "
+    bindtap="{{item.url?'bindDirect':''}}"
+    data-url="{{item.url}}"
+  >
+    <view class="item_content">
+      <view class="iconfont {{item.icon}}"></view>
+      <view class="title">{{item.title}}</view>
+    </view>
+  </view>
+</view>

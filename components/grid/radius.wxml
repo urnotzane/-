@@ -1,7 +1,0 @@
-<view class="zc_grid">
-  <view wx:for="{{data}}" wx:key="{{index}}" class="grid_item shadow_blur {{classNames[index]}}">
-    <view class="item_content">
-      <text>{{item.title}}</text>
-    </view>
-  </view>
-</view>

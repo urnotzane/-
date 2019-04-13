@@ -28,7 +28,9 @@ Component({
   },
 
   methods: {
-
+    bindDirect(e) {
+      wx.navigateTo({ url: e.currentTarget.dataset.url })
+    }
   },
 
   ready() {

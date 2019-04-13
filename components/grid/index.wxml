@@ -1,1 +1,3 @@
-<Radius wx:if="{{type=='radius'}}" data="{{data}}" />
+<Separate wx:if="{{type=='separate'}}" data="{{data}}" />
+
+<Base wx:if="{{type=='base'}}" data="{{data}}" columns="{{columns}}" border="{{border}}" />
