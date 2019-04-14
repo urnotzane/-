@@ -1,7 +1,7 @@
-<view class="zc_header {{className}}" style="padding-top: {{statusBarHeight}}rpx">
-  <view class='header_title' bindtap="bindBack">
-    <view wx:if="{{url==='back'}}" class="iconfont zicon_back"></view>
-    <view>{{title}}</view>
-  </view>
-</view>
-<view class="zc_placeholder" style="height: {{statusBarHeight+100}}rpx"></view>
+<block wx:if="{{type=='page'}}">
+  <PageHeader title="{{title}}" url="{{url}}" className="{{className}}" />
+</block>
+
+<block wx:if="{{type=='section'}}">
+  <SectionHeader title="{{title}}" url="{{url}}" border="{{border}}" />
+</block>

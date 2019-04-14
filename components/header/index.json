@@ -1,4 +1,7 @@
 {
   "component": true,
-  "usingComponents": {}
+  "usingComponents": {
+    "PageHeader": "page",
+    "SectionHeader": "section"
+  }
 }

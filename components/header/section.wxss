@@ -1,0 +1,28 @@
+.zc_section_header{
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  height: 90rpx;
+  line-height: 90rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  border-bottom: 1rpx #eee solid;
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.zc_section_header .zicon_vertical_dot{
+  color: #409eff;
+  margin-right: 10rpx;
+}
+
+.zc_section_header .actions{
+  position: absolute;
+  top: 0;
+  right: 30rpx;
+  color: #409eff;
+}
+
+.zc_section_header .actions text{
+  padding-left: 20rpx;
+}

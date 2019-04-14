@@ -1,6 +1,6 @@
-<Header title="首页" />
+<Header title="首页" className="bk_white" />
 
 <view class="container">
-  <List type="base" data="{{list}}" />
+  <Grid type="separate" data="{{list}}" />
 </view>
 

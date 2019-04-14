@@ -1,9 +1,8 @@
 <view class="zc_list">
   <view class="list_cell" wx:for="{{data}}" wx:key="{{index}}">
-    <view wx:if="{{item.icon||item.img}}" class="list_avatar">
-      <image mode="aspectFill" wx:if="{{item.img}}" src="{{item.img}}"></image>
+    <view wx:if="{{item.icon}}" class="list_avatar">
       <view 
-        wx:if="{{item.icon&&!item.img}}" 
+        wx:if="{{item.icon}}" 
         class="iconfont {{item.icon}}" 
         style="color: {{item.iconColor?item.iconColor:'#409eff'}}">
       </view>

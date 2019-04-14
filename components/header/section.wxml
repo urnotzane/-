@@ -1,0 +1,12 @@
+<view class="zc_section_header" style="{{border==true?'':'border:none'}}">
+  <view class="iconfont zicon_vertical_dot"></view>
+  <view class="title">{{title}}</view>
+  <view class="actions">
+    <view bindtap="bindShow" class="iconfont zicon_grid"></view>
+  </view>
+</view>
+
+
+<view hidden="{{!show}}" class="actions_view">
+  设置
+</view>

@@ -1,6 +1,6 @@
 .tab_bar {
   display: flex;
-  background: #fff;
+  background-color: #fff;
   border-top: 1rpx #eee solid;
   box-sizing: border-content;
   height: 100rpx;

@@ -1,3 +1,4 @@
+const STATUS_BAR_HEIGHT = getApp().globalData.statusBarHeight * 2
 
 Component({
   options: {
@@ -8,9 +9,9 @@ Component({
   properties: {
     title: {
       type: String,
-      value: 'ZANE组件库'
+      value: ''
     },
-    
+
     url: {
       type: String,
       value: ''
@@ -21,23 +22,20 @@ Component({
       value: ''
     },
 
-    type: {
-      type: String,
-      value: 'page',
-    },
-
     border: {
-      type: Boolean,
-      value: true,
+      type: String,
+      value: '',
     }
   },
 
   data: {
-    
+    show: false
   },
 
   methods: {
-
+    bindShow() {
+      this.setData({ show: !this.data.show })
+    }
   },
 
 })

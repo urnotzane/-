@@ -1,9 +1,12 @@
-<Header wx: title="{{title}}" url="back" className="{{className}}" />
+<Header title="{{title}}" url="back" className="{{className}}" />
 
 <block wx:if="{{type=='list'}}">
-  <List type="base" data="{{data}}" />
-  <List type="detail" data="{{data}}" />
-  <List type="msg" data="{{data}}" />
+  <Header type="section" title="基本" className="{{className}}" />
+  <List type="base"  />
+  <Header type="section" title="详细" className="{{className}}" />
+  <List type="detail" />
+  <Header type="section" title="消息" className="{{className}}" border="false" />
+  <List type="msg" avatarMode="radius" />
 </block>
 
 <block wx:if="{{type=='grid'}}">

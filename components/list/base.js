@@ -1,13 +1,3 @@
-const DEFAULT_DATA = [
-  {
-    title: '列表名称',
-    value: '列表数据',
-    url: '',
-    icon: 'icon-list',
-    image: '/images/rate.png',
-    iconColor: '#409eff',
-  },
-]
 
 Component({
   options: {
@@ -18,12 +8,12 @@ Component({
   properties: {
     data: {
       type: Array,
-      value: DEFAULT_DATA
+      value: []
     },
   },
 
   data: {
-
+    checked: false,
   },
 
   methods: {

@@ -9,7 +9,7 @@ Page({
     this.setData({
       title: options.title,
       className: options.className ? options.className : '',
-      type: options.type,
+      type: options.type ? options.type : '',
     })
   },
 

@@ -6,7 +6,6 @@ page {
   font-size: 28rpx;
   color: #333;
   background: #f8f8f8;
-  overflow: hidden;
 }
 
 .zicon_next {
@@ -42,4 +41,113 @@ page {
   transform-origin: 0 0;
   border-radius: inherit;
   transform: scale(1, 1);
+}
+
+.bk_red {
+  background-image: linear-gradient(to top right, #f43f3b 0%, #ec008c 100%) !important;
+}
+
+.bk_orange {
+  background-image: linear-gradient(to top right, #ff4e50 0%, #f9d423 100%) !important;
+}
+
+.bk_green {
+  background-image: linear-gradient(to top right, #39b54a 0%, #8dc63f 100%) !important;
+}
+
+.bk_cyan {
+  background-image: linear-gradient(to top right, #43e97b 0%, #38f9d7 100%) !important;
+}
+
+.bk_blue {
+  background-image: linear-gradient(to top right, #005bea 0%, #00c6fb 100%) !important;
+}
+
+.bk_dark {
+  background-image: linear-gradient(to top right, #555 0%, #999 50%, #ddd 100%) !important;
+}
+
+.bk_night_call {
+  background-image: linear-gradient(to top right, #ac32e4 0%, #7918f2 50%, #4801ff 100%) !important;
+}
+
+.bk_north_miracle {
+  background-image: linear-gradient(to top right, #fc00ff 0%, #00dbde 100%) !important;
+}
+
+.bk_gagarin {
+  background-image: linear-gradient(to top right, #1eecff 0%, #6297db 50%, #77ffd2 100%) !important;
+}
+
+.bk_white {
+  background-color: #fff !important;
+  color: #333 !important;
+  background-image: unset !important;
+}
+
+.bk_light {
+  background-color: #f8f8f8 !important;
+  color: #333 !important;
+  background-image: unset !important;
+}
+
+/*swtich整体大小*/
+
+switch .wx-switch-input {
+  width: 44px !important;
+  height: 24px !important;
+  border: none !important;
+  border-radius: 25rpx !important;
+}
+
+/* 白色样式（false的样式） */
+
+.wx-switch-input::before {
+  width: 44px !important;
+  height: 24px !important;
+  border: none;
+  background-color: #aaa !important;
+  border-radius: 100px;
+  z-index: 1;
+}
+
+/*绿色样式（true的样式）*/
+
+.wx-switch-input::after {
+  width: 22px !important;
+  height: 22px !important;
+  box-sizing: border-box;
+  margin: 1px;
+  border: none !important;
+  border-radius: 50% !important;
+  z-index: 2;
+}
+
+switch {
+  position: relative;
+  font-family: "iconfont" !important;
+}
+
+switch::after {
+  content: '\e69e';
+  right: 0;
+}
+
+switch::before {
+  content: '\e854';
+  left: 7px;
+}
+
+switch::after, switch::before {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  z-index: 1;
+  color: #fff;
+  pointer-events: none;
+  font-size: 10px;
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  transition: all 0.3s ease-in-out 0s;
 }

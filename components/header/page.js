@@ -1,3 +1,4 @@
+const STATUS_BAR_HEIGHT = getApp().globalData.statusBarHeight * 2
 
 Component({
   options: {
@@ -8,9 +9,9 @@ Component({
   properties: {
     title: {
       type: String,
-      value: 'ZANE组件库'
+      value: ''
     },
-    
+
     url: {
       type: String,
       value: ''
@@ -20,24 +21,16 @@ Component({
       type: String,
       value: ''
     },
-
-    type: {
-      type: String,
-      value: 'page',
-    },
-
-    border: {
-      type: Boolean,
-      value: true,
-    }
   },
 
   data: {
-    
+    statusBarHeight: STATUS_BAR_HEIGHT,
   },
 
   methods: {
-
+    bindBack() {
+      wx.navigateBack()
+    }
   },
 
 })

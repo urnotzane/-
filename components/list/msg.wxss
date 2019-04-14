@@ -15,7 +15,7 @@
 .zc_list .list_avatar {
   width: 96rpx;
   height: 96rpx;
-  margin: 20rpx 20rpx 20rpx 0;
+  margin: 20rpx 30rpx 20rpx 0;
 }
 
 .zc_list .list_avatar image {

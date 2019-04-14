@@ -2,6 +2,32 @@ const DEFAULT_VALUE = [
   {
     title: '列表名称',
     description: '列表描述',
+    img: '/images/cat.jpg',
+    icon: 'zicon_list',
+    iconColor: '#409eff',
+    sideName: '22:02',
+    sideValue: '',
+    value: '我是列表',
+  },
+  {
+    title: '列表名称',
+    description: '列表描述',
+    img: '/images/cat.jpg',
+    icon: 'zicon_list',
+    iconColor: '#409eff',
+    sideName: '22:02',
+    sideValue: '',
+    value: '我是列表',
+  },
+  {
+    title: '列表名称',
+    description: '列表描述',
+    img: '/images/cat.jpg',
+    icon: 'zicon_list',
+    iconColor: '#409eff',
+    sideName: '22:02',
+    sideValue: '',
+    action: true,
   },
 ]
 
@@ -20,7 +46,7 @@ Component({
       type: String,
       value: 'base'
     },
-    avatarMode: {
+    avatarMode: { 
       type: String,
       value: ''
     }

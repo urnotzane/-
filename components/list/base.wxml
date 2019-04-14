@@ -1,9 +1,8 @@
 <view class="zc_list">
   <view class="list_cell" wx:for="{{data}}" wx:key="{{index}}" data-item="{{item}}" bindtap="{{item.url?'bindDetail':''}}">
-    <view wx:if="{{item.icon||item.img}}" class="list_avatar">
-      <image mode="aspectFill" wx:if="{{item.img}}" src="{{item.img}}"></image>
+    <view wx:if="{{item.icon}}" class="list_avatar">
       <view 
-        wx:if="{{item.icon&&!item.img}}" 
+        wx:if="{{item.icon}}" 
         class="iconfont {{item.icon}}" 
         style="color: {{item.iconColor?item.iconColor:'#409eff'}}">
       </view>
@@ -11,6 +10,7 @@
     <view class="list_body">
       <view class="title">{{item.title}}</view>
       <view wx:if="{{item.value}}" class="value">{{item.value}}</view>
+      <switch wx:if="{{item.action}}" color="#409eff" bindchange="bindSwitch" />
     </view>
     <view wx:if="{{item.url}}" class="iconfont zicon_next"></view>
   </view>
