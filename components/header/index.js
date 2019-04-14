@@ -27,8 +27,8 @@ Component({
     },
 
     border: {
-      type: Boolean,
-      value: true,
+      type: Number,
+      value: 1,
     }
   },
 

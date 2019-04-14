@@ -5,7 +5,7 @@
   <List type="base"  />
   <Header type="section" title="详细" className="{{className}}" />
   <List type="detail" />
-  <Header type="section" title="消息" className="{{className}}" border="false" />
+  <Header type="section" title="消息" className="{{className}}" border="0" />
   <List type="msg" avatarMode="radius" />
 </block>
 
