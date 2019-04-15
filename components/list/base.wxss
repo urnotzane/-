@@ -19,22 +19,41 @@
   border-top: none;
 }
 
-.zc_list .list_avatar{
+.zc_list .list_avatar {
   width: 50rpx;
   height: 90rpx;
 }
 
-.zc_list .list_avatar image{
+.zc_list .list_avatar image {
   width: 32rpx;
   height: 32rpx;
 }
 
-.zc_list .list_body{
+.zc_list .list_body {
   flex: 1;
   display: flex;
   justify-content: space-between;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.zc_list .list_body .value{
-  color: #888;
+.zc_list .list_body .title, .zc_list .list_body .tags,
+.zc_list .list_body .value {
+  max-width: 320rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.zc_list .list_body .value {
+  color: #aaa;
+}
+
+.zc_list .list_body .tag {
+  font-size: 22rpx;
+  padding: 5rpx 15rpx;
+  background: #eee;
+  margin-left: 10rpx;
+  border-radius: 30rpx;
 }

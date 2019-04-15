@@ -12,14 +12,14 @@
 
 ## 项目规范
 ### 颜色：
-primary: #409eff
-secondary: #888
-success: #28a745
-danger: #dc3545
-warning: #ffc107
-info: #17a2b8
-light: #f8f8f8
-black: #333
-border: #ededed
+- primary: #409eff
+- secondary: #888
+- success: #28a745
+- danger: #dc3545
+- warning: #ffc107
+- info: #17a2b8
+- light: #f8f8f8
+- black: #555
+- border: #ededed
 
 

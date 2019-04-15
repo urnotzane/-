@@ -8,8 +8,11 @@
       </view>
     </view>
     <view class="list_body">
-      <view class="title">{{item.title}}</view>
+      <view class="title">{{item.title}}</view> 
       <view wx:if="{{item.value}}" class="value">{{item.value}}</view>
+      <view wx:if="{{item.tags}}" class="tags">
+        <text wx:for="{{item.tags}}" wx:key="{{index}}" class="tag {{bkNames[index]}}">{{item}}</text>
+      </view>
       <switch wx:if="{{item.action}}" color="#409eff" bindchange="bindSwitch" />
     </view>
     <view wx:if="{{item.url}}" class="iconfont zicon_next"></view>

@@ -30,11 +30,13 @@
 
 .zc_list .list_body{
   flex: 1;
+  line-height: 40rpx;
 }
 
 .zc_list .list_body .description{
-  color: #888;
+  color: #aaa;
   font-size: 24rpx;
+  margin-top: 8rpx;
 }
 
 .zc_list .icon-right{

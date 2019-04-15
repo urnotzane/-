@@ -48,7 +48,7 @@
 
 .zc_list .list_body .description, .zc_list .list_side {
   font-size: 22rpx;
-  color: #888;
+  color: #aaa;
 }
 
 .zc_list .list_side {

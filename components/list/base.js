@@ -1,3 +1,4 @@
+const BK_NAMES = ['bk_stick_green', 'bk_stick_orange','bk_stick_yellow']
 
 Component({
   options: {
@@ -14,6 +15,7 @@ Component({
 
   data: {
     checked: false,
+    bkNames: BK_NAMES,
   },
 
   methods: {
@@ -21,5 +23,9 @@ Component({
       const item = e.currentTarget.dataset.item
       wx.navigateTo({ url: item.url, })
     }
+  },
+
+  ready() {
+    
   }
 })

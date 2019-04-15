@@ -23,6 +23,6 @@
   color: #409eff;
 }
 
-.zc_section_header .actions text{
+.zc_section_header .actions .iconfont{
   padding-left: 20rpx;
 }

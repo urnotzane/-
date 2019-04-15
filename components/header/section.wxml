@@ -2,7 +2,7 @@
   <view class="iconfont zicon_vertical_dot"></view>
   <view class="title">{{title}}</view>
   <view class="actions">
-    <view bindtap="bindShow" class="iconfont zicon_grid"></view>
+    <view bindtap="bindShow" class="iconfont zicon_set"></view>
   </view>
 </view>
 

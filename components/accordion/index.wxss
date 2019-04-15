@@ -38,7 +38,7 @@
 .accordion_header .description {
   line-height: 48rpx;
   font-size: 24rpx;
-  color: #888;
+  color: #aaa;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
