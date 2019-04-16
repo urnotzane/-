@@ -1,0 +1,16 @@
+<view class="zc_modal {{show?'show':''}}">
+  <view class="mask" bindtap='bindHide'></view>
+  <view class="modal_wrapper">
+    <view class="header">
+      <view class="title">{{title}}</view>
+      <view bindtap='bindHide' class="iconfont zicon_close"></view>
+    </view>
+    <view class="content">
+      <view class="text">{{text}}</view>
+    </view>
+    <view wx:if="{{footer===true}}" class="footer">
+      <view wx:if="{{cancel===true}}" class="cancel">取消</view>
+      <view class="sure">确定</view>
+    </view>
+  </view>
+</view>

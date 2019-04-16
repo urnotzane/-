@@ -3,6 +3,7 @@ Page({
     title: 'ZANE组件库',
     className: '',
     type: '',
+    show: false,
   },
 
   onLoad: function(options) {
@@ -12,5 +13,9 @@ Page({
       type: options.type ? options.type : '',
     })
   },
+
+  bindShow() {
+    this.setData({ show: true })
+  }
 
 })

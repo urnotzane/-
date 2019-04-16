@@ -21,7 +21,7 @@ const LIST = [
     title: '弹窗',
     en: 'Modal',
     icon: 'zicon_modal',
-    url: '/pages/example/index?title=弹窗 Modal',
+    url: '/pages/example/index?title=弹窗 Modal&type=modal',
   },
   {
     title: '手风琴',

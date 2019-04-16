@@ -1,0 +1,8 @@
+<Dialog 
+  wx:if="{{type=='dialog'}}" 
+  title="{{title}}" 
+  text="{{text}}" 
+  footer="{{footer}}" 
+  cancel="{{cancel}}" 
+  show="{{show}}" 
+/>

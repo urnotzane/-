@@ -3,6 +3,7 @@
     "Accordion": "/components/accordion/index",
     "List": "/components/list/index",
     "Header": "/components/header/index",
-    "Grid": "/components/grid/index"
+    "Grid": "/components/grid/index",
+    "Modal": "/components/modal/index"
   }
 }

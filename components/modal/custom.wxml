@@ -1,0 +1,16 @@
+<view class="zc_modal">
+  <view class="mask"></view>
+  <view class="modal_wrapper">
+    <view class="header">
+      <view class="title">{{title}}</view>
+      <view class="iconfont zicon_close"></view>
+    </view>
+    <view class="content">
+      弹窗内容
+    </view>
+    <view class="footer">
+      <view class="cancel">取消</view>
+      <view class="sure">确定</view>
+    </view>
+  </view>
+</view>

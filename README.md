@@ -15,7 +15,7 @@
 - primary: #409eff
 - secondary: #888
 - success: #28a745
-- danger: #dc3545
+- danger: #f30
 - warning: #ffc107
 - info: #17a2b8
 - light: #f8f8f8
