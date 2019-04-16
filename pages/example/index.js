@@ -16,6 +16,10 @@ Page({
 
   bindShow() {
     this.setData({ show: true })
-  }
+  },
+
+  bindModal(e) {
+    console.log(e)
+  },
 
 })

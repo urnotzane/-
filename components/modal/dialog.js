@@ -39,7 +39,17 @@ Component({
   methods: {
     bindHide() {
       this.setData({ show: false })
-    }
+    },
+
+    bindSure() {
+      this.bindHide()
+      this.triggerEvent('sure', {})
+    },
+
+    bindCancle() {
+      this.bindHide()
+      this.triggerEvent('cancle', {})
+    },
   },
 
   ready() {

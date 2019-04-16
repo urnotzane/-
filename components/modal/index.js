@@ -42,7 +42,9 @@ Component({
   },
 
   methods: {
-
+    bindModal(e) {
+      this.triggerEvent(e.type, e.detail)
+    },
   },
 
   ready() {

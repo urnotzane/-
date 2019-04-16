@@ -16,5 +16,12 @@
 
 <block wx:if="{{type=='modal'}}">
   <button bindtap='bindShow'>显示</button>
-  <Modal type="dialog" title="弹窗" text="弹窗内容太少了，再来点吧！" show="{{show}}" cancel="{{false}}" />
+  <Modal 
+    type="dialog" 
+    title="弹窗" 
+    text="弹窗内容太少了，再来点吧！" 
+    show="{{show}}" 
+    bind:sure="bindModal"
+    bind:cancle="bindModal"
+  />
 </block>
