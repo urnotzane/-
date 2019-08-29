@@ -14,6 +14,8 @@
 	"appid": "wx52ff4852000b8744",
 	"projectname": "ZANE%E7%BB%84%E4%BB%B6%E5%BA%93",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
